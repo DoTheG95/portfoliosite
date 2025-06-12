@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
 
-import Home from "./projects";
+import Home from "./home";
 import Projects from "./projects";
 import Contact from "./contact";
 import Socials from "./socials";
@@ -12,6 +12,9 @@ export default function Main() {
       <Navbar />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Home />
+        {/* <Projects /> */}
+        {/* <Contact /> */}
+        {/* <Socials /> */}
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <Footer />

@@ -5,9 +5,8 @@ export default function Footer() {
     <div className="flex flex-row gap-6 items-center justify-center font-[family-name:var(--font-geist-sans)]">
       <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/Gary Kim CV 2025.pdf"
+        download
       >
         <Image
           aria-hidden
