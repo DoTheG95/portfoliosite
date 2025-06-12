@@ -30,7 +30,7 @@ export default function Socials() {
                />
             </a>
             <a
-               href="https://github.com/DoTheG95"
+               href="mailto:gary.kim.1009@gmail.com"
                target="_blank"
                rel="noopener noreferrer"
             >
