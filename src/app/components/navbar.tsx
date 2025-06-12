@@ -15,7 +15,7 @@ const Navbar = () => {
     { href: '/contact', label: 'Contact' },
   ];
 
-  const isActive = (path) => pathname === path;
+  const isActive = (path : string) => pathname === path;
 
   return (
     <nav className="bg-black/[0.5] shadow-lg sticky top-0 z-50">
