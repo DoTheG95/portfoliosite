@@ -3,7 +3,7 @@ import Navbar from "./components/navbar";
 import Home from "./home";
 import Projects from "./projects";
 import Contact from "./contact";
-import Socials from "./socials";
+import Hobbies from "./hobbies";
 import Footer from "./components/footer";
 
 export default function Main() {
@@ -14,7 +14,7 @@ export default function Main() {
         <Home />
         {/* <Projects /> */}
         {/* <Contact /> */}
-        {/* <Socials /> */}
+        {/* <Hoobies /> */}
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <Footer />

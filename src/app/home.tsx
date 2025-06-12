@@ -1,6 +1,6 @@
 'use client'
-
 import Image from "next/image";
+import Socials from "./components/socials";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 export default function Home() {
@@ -53,47 +53,7 @@ export default function Home() {
             Currently in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
         </div>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            href="https://github.com/DoTheG95"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/github.svg"
-              alt="GitHub"
-              width={20}
-              height={20}
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gary-kim-260b42213/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/linkedin.svg"
-              alt="LinkedIn"
-              width={20}
-              height={20}
-            />
-          </a>
-          <a
-            href="https://github.com/DoTheG95"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/mail.svg"
-              alt="Mail"
-              width={20}
-              height={20}
-            />
-          </a>
-        </div>
+        <Socials />
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           Here is a little about me:
           <TextTyped />
