@@ -2,8 +2,13 @@
 import Image from "next/image";
 import Socials from "./components/socials";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useState } from 'react';
+import WorkExperience from "./components/workexperience";
+import Education from "./components/education";
 
 export default function Home() {
+
+  const [activeTab, setActiveTab] = useState('work'); 
 
   const TextTyped = () => {
     const [text] = useTypewriter({
@@ -63,39 +68,25 @@ export default function Home() {
             Currently in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
         </div>
-        <div role="tablist" className="w-full border border-white flex">
-          <button type="button" role="tab" className="flex-1 border-white text-center py-2">
-            Work Experience
-          </button>
-          <button type="button" role="tab" className="flex-1 border-white text-center py-2">
-            Education
-          </button>
-        </div>
-        {/* Div for current work experience */}
-        <div>
 
-        </div>
-
-        <div>
-          <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
-            Education
-          </h4>
-          <div className="flex">
-            <img
-              src="https://icons.auckland.ac.nz/assets/logos/uoa/horizontal/uoa_logo.svg"
-              alt="University of Auckland Logo"
-              className="w-48 h-auto"
-            />
-            <div>
-              The University of Auckland (UoA) <br/>
-              2014 - 2017 <br/>
-              Bachelor of Science <br/>
-              Double Major in Computer Science and Information Systems
-            </div>
-
+        <div className="w-full">
+          <div role="tablist" className="w-full border border-white flex">
+            <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('work')}>
+              Work Experience
+            </button>
+            <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('education')}>
+              Education
+            </button>
           </div>
+          
+          {/* Work Experience Section */}
+          {activeTab === 'work' && (
+            <WorkExperience />
+            )}
+          {activeTab === 'education' && (
+            <Education />
+          )}
         </div>
-
       </main>
     </div>
   );
