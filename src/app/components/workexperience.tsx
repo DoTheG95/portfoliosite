@@ -11,11 +11,56 @@ export default function WorkExperience() {
             <img
             src="/briskicon_new.png"
             alt="Brisk Cloudware"
-            className="w-20 h-auto"
+            className="w-20 h-20"
             />
             <div>
             <div className="text-xl sm:text-xl md:text-xl font-bold">
                Brisk Cloudware (NCH Software)
+            </div>
+            - June 2024 - June 2025 (12 month Contract) <br />
+            Bachelor of Science <br />
+            Double Major in Computer Science and Information Systems <br />
+            </div>
+         </div>
+         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+            <img
+            src="/ezyvet.png"
+            alt="ezyVet"
+            className="w-20 h-20"
+            />
+            <div>
+            <div className="text-xl sm:text-xl md:text-xl font-bold">
+               ezyVet
+            </div>
+            - June 2024 - June 2025 (12 month Contract) <br />
+            Bachelor of Science <br />
+            Double Major in Computer Science and Information Systems <br />
+            </div>
+         </div>
+         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+            <img
+            src="/briskicon_new.png"
+            alt="Brisk Cloudware"
+            className="w-20 h-auto"
+            />
+            <div>
+            <div className="text-xl sm:text-xl md:text-xl font-bold">
+               Gorilla Technology
+            </div>
+            - June 2024 - June 2025 (12 month Contract) <br />
+            Bachelor of Science <br />
+            Double Major in Computer Science and Information Systems <br />
+            </div>
+         </div>
+         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+            <img
+            src="/briskicon_new.png"
+            alt="Brisk Cloudware"
+            className="w-20 h-auto"
+            />
+            <div>
+            <div className="text-xl sm:text-xl md:text-xl font-bold">
+               National Holdings (NCH Software)
             </div>
             - June 2024 - June 2025 (12 month Contract) <br />
             Bachelor of Science <br />
