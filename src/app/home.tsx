@@ -68,14 +68,13 @@ export default function Home() {
             Currently in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
         </div>
-
         <div className="w-full">
           <div role="tablist" className="w-full border border-white flex">
             <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('work')}>
               Work Experience
             </button>
             <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('education')}>
-              Education
+              Education & Start ups
             </button>
           </div>
           
