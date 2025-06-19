@@ -5,6 +5,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { useState } from 'react';
 import WorkExperience from "./components/workexperience";
 import Education from "./components/education";
+import TechStack from "./components/techstack";
 
 export default function Home() {
 
@@ -77,14 +78,20 @@ export default function Home() {
               Education & Start ups
             </button>
           </div>
-          
-          {/* Work Experience Section */}
           {activeTab === 'work' && (
             <WorkExperience />
             )}
           {activeTab === 'education' && (
             <Education />
           )}
+        </div>
+        {/* Tech stack */}
+        <TechStack />
+        {/* Hobbies */}
+        <div className="w-full">
+          <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold">
+            Hobbies
+          </h4>
         </div>
       </main>
     </div>

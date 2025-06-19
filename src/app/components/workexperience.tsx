@@ -5,10 +5,10 @@ import WorldIcon from "./worldicon";
 export default function WorkExperience() {
    return (
       <div className="w-full border border-white pb-4">
-         <h4 className="pl-4 text-2xl sm:text-2xl md:text-2xl font-bold">
+         <h4 className="pl-4 pt-4 text-2xl sm:text-2xl md:text-2xl font-bold">
             Work Experience
          </h4>
-         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+         <div className="flex pt-8 pl-8 sm:text-left gap-4">
             <img
             src="/briskicon_new.png"
             alt="Brisk Cloudware"
@@ -16,7 +16,6 @@ export default function WorkExperience() {
             />
             <div>
                <div>June 2024 - June 2025 (12 month Contract) </div>
-
                <div className="text-xl sm:text-xl md:text-xl font-bold flex flex-row">
                   Brisk Cloudware (NCH Software)
                </div>
@@ -34,7 +33,7 @@ export default function WorkExperience() {
                Tech Stack:  HTML, CSS, Vanilla JS
             </div>
          </div>
-         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+         <div className="flex pt-12 pl-8 sm:text-left gap-4">
             <img
             src="/ezyvet.png"
             alt="ezyVet"
@@ -70,7 +69,7 @@ export default function WorkExperience() {
                </ul>
             </div>
          </div>
-         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+         <div className="flex pt-12 pl-8 sm:text-left gap-4">
             <img
             src="/gorillatechlogo.jpeg"
             alt="Gorilla Technology"
@@ -117,7 +116,7 @@ export default function WorkExperience() {
                </ul>
             </div>
          </div>
-         <div className="flex pt-4 pl-8 sm:text-left gap-4">
+         <div className="flex pt-12 pl-8 sm:text-left gap-4">
             <img
             src="/jnj.png"
             alt="National Holdings"
