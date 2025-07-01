@@ -1,5 +1,4 @@
-'use client'
-import Image from "next/image";
+'use client';
 import TechStackIcon from "./techstackicon";
 
 export default function TechStack() {

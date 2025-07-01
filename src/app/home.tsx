@@ -6,6 +6,8 @@ import { useState } from 'react';
 import WorkExperience from "./components/workexperience";
 import Education from "./components/education";
 import TechStack from "./components/techstack";
+import Hobbies from "./components/hobbies";
+import Projects from "./components/projects";
 
 export default function Home() {
 
@@ -63,7 +65,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div>
+        <div> <span className="flag-icon flag-icon-kr" />
           <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
             I am a Korean 🇰🇷 raised in New Zealand 🇳🇿 <br />
             Currently in Brisbane looking for great opportunities in Australia 🇦🇺
@@ -85,14 +87,9 @@ export default function Home() {
             <Education />
           )}
         </div>
-        {/* Tech stack */}
         <TechStack />
-        {/* Hobbies */}
-        <div className="w-full">
-          <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold">
-            Hobbies
-          </h4>
-        </div>
+        <Hobbies />
+        <Projects />
       </main>
     </div>
   );

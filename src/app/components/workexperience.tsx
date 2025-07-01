@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import WorldIcon from "./worldicon";
 
 export default function WorkExperience() {
@@ -125,14 +124,14 @@ export default function WorkExperience() {
             <div>
             Sep 2018 - June 2019 (Full time) <br />
             <div className="text-xl sm:text-xl md:text-xl font-bold">
-               National Holdings (NCH Software)
+               National Holdings / JNJ Management
             </div>
-            IT Admin
-            Managed all IT infrastructure and assets in the 'Sky World' building <br />
-            Including all related websites: <br />
+            IT Admin <br />
+            Managed all IT infrastructure and assets in the 'Sky World' building  <br />
             <br />
-               <b>Key Responsibilities & Achievements: </b><br />
+            <b>Key Responsibilities & Achievements: </b><br />
             <ul className="list-disc ml-5 mt-2">
+               <li> Including all related websites: </li>
                <li>
                   <a
                   className="flex items-center gap-2 hover:underline hover:underline-offset-4"

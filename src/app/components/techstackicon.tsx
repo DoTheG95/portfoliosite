@@ -12,8 +12,8 @@ export default function TechStackIcon ({ stackname }: TechStackProps) {
       <img
         src={imageSrc}
         alt={stackname}
-        className="w-48 h-auto"
-      />
+        className="w-[100px] h-auto min-w-[80px] max-w-[120px] object-contain mx-auto"
+        />
       <div className="text-center">{stackname}</div>
     </div>
   );
