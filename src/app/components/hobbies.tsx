@@ -23,15 +23,15 @@ export default function Hobbies() {
     {
       backSrc: './tcgback2.svg',
       frontProps: {
-        imageSrc:"",
-          name:"TCG",
+        imageSrc:"./travelling.png",
+          name:"Travelling",
           description:[
-            'Time management',
-            'Resource management',
-            'Quick thinking'
+            'Planning ahead',
+            'Research',
+            'Adaptability '
           ],
-          iconSrc:'./globe.svg',
-          iconLink:'https://example.com',
+          iconSrc:"./globe.svg",
+          iconLink:"https://www.instagram.com/wrappergary/"
       }
     },
     {
@@ -51,12 +51,26 @@ export default function Hobbies() {
     {
       backSrc: './tcgback2.svg',
       frontProps: {
-        imageSrc:"./travelling.png",
-          name:"Travelling",
+        imageSrc:"./profile_picture.jpg",
+          name:"TCG",
           description:[
-            'Planning ahead',
-            'Research',
-            'Adaptability '
+            'Time management',
+            'Resource management',
+            'Quick thinking'
+          ],
+          iconSrc:'./globe.svg',
+          iconLink:'https://example.com',
+      }
+    },
+    {
+      backSrc: './tcgback2.svg',
+      frontProps: {
+        imageSrc:"./profile_picture.jpg",
+          name:"Gaming",
+          description:[
+            'Team work',
+            'Effective communication',
+            'Sportsmanship'
           ],
           iconSrc:"./globe.svg",
           iconLink:"https://example.com"
@@ -65,7 +79,7 @@ export default function Hobbies() {
     {
       backSrc: './tcgback2.svg',
       frontProps: {
-          imageSrc:"",
+        imageSrc:"./profile_picture.jpg",
           name:"Gaming",
           description:[
             'Team work',
