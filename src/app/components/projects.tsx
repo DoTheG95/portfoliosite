@@ -2,17 +2,11 @@
 
 export default function Projects() {
    return (
-      <div className="w-full">
-         <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold">
+      <div className="w-full max-w-screen-xl mx-auto">
+         <h4 className="text-2xl text-align:center sm:text-2xl md:text-2xl font-bold">
             Projects
          </h4>
-         <div className="w-full border border-white flex flex-row">
-          {/* Upload project pages */}
-            <ul>
-              <li>
-                Fearlesslocke
-              </li>
-            </ul>
+         <div className="border border-white">
          </div>
       </div>
    );

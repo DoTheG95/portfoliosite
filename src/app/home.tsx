@@ -29,9 +29,9 @@ export default function Home() {
   }
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="flex flex-col sm:flex-row items-center gap-8 w-full">
+    <div className="w-full">
+      <main className="flex flex-col gap-8 items-center sm:items-start w-full">
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between w-full gap-8">
           <div className="flex-1">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center sm:text-left leading-tight">
               Hi
@@ -55,7 +55,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex justify-between items-center w-full">
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between w-full gap-8">
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             Here is a little about me:
             <TextTyped />
@@ -64,15 +64,15 @@ export default function Home() {
             <Socials />
           </div>
         </div>
-        
-        <div> <span className="flag-icon flag-icon-kr" />
+          
+        <div> 
           <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
             I am a Korean 🇰🇷 raised in New Zealand 🇳🇿 <br />
             Currently in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
         </div>
-        <div className="w-full">
-          <div role="tablist" className="w-full border border-white flex">
+        <div className="w-full max-w-screen-xl mx-auto">
+          <div role="tablist" className="flex border border-white flex-wrap">
             <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('work')}>
               Work Experience
             </button>
@@ -87,9 +87,9 @@ export default function Home() {
             <Education />
           )}
         </div>
-        <TechStack />
-        <Hobbies />
-        <Projects />
+          <TechStack />
+          <Hobbies />
+          <Projects />
       </main>
     </div>
   );

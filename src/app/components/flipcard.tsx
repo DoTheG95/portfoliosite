@@ -11,8 +11,8 @@ interface FlipCardProps {
 export default function FlipCard({
     front,
     back,
-    width = 200,
-    height = 300
+    width = 400,
+    height = 600
 }: FlipCardProps) {
   return (
     <div

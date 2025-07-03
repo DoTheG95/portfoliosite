@@ -3,11 +3,18 @@ import TechStackIcon from "./techstackicon";
 
 export default function TechStack() {
    return (
-      <div className="w-full">
-         <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold">
+      <div className="w-full max-w-screen-xl mx-auto">
+         <h4 className="text-2xl text-align:center sm:text-2xl md:text-2xl font-bold">
             Tech stack
          </h4>
-         <div className="w-full border border-white flex flex-row">
+         <div className="border border-white
+            grid 
+            grid-cols-2    
+            sm:grid-cols-3 
+            md:grid-cols-6
+            xlg:grid-cols-7 
+            gap-6  
+            justify-items-center">
             <TechStackIcon stackname="HTML5"/>
             <TechStackIcon stackname="CSS"/>
             <TechStackIcon stackname="JAVASCRIPT"/>
