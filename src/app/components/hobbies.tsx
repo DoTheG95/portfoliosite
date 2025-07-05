@@ -48,48 +48,6 @@ export default function Hobbies() {
           iconLink:"https://www.instagram.com/aussie_short_shoots/",
       }
     },
-    {
-      backSrc: './tcgback2.svg',
-      frontProps: {
-        imageSrc:"./profile_picture.jpg",
-          name:"TCG",
-          description:[
-            'Time management',
-            'Resource management',
-            'Quick thinking'
-          ],
-          iconSrc:'./globe.svg',
-          iconLink:'https://example.com',
-      }
-    },
-    {
-      backSrc: './tcgback2.svg',
-      frontProps: {
-        imageSrc:"./profile_picture.jpg",
-          name:"Gaming",
-          description:[
-            'Team work',
-            'Effective communication',
-            'Sportsmanship'
-          ],
-          iconSrc:"./globe.svg",
-          iconLink:"https://example.com"
-      }
-    },
-    {
-      backSrc: './tcgback2.svg',
-      frontProps: {
-        imageSrc:"./profile_picture.jpg",
-          name:"Gaming",
-          description:[
-            'Team work',
-            'Effective communication',
-            'Sportsmanship'
-          ],
-          iconSrc:"./globe.svg",
-          iconLink:"https://example.com"
-      }
-    },
   ]
 
 
@@ -113,7 +71,6 @@ export default function Hobbies() {
                 front={
                   <TCGCardFront
                     {...c.frontProps}
-                    // remove your hard 400×600 props here
                   />
                 }
                 back={
