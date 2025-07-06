@@ -32,6 +32,7 @@ export default function Projects() {
                width={1400}
                height={300}
             />
+            Visit the full page and play around with the features here: 
          </div>
       </div>
    );
