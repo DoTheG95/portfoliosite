@@ -12,6 +12,8 @@ export default function WorkExperience() {
             <Image
                src="/briskicon_new.png"
                alt="Brisk Cloudware"
+               width={80}
+               height={80}
                className="w-20 h-20"
             />
             <div>
@@ -37,6 +39,8 @@ export default function WorkExperience() {
             <Image
                src="/ezyvet.png"
                alt="ezyVet"
+               width={80}
+               height={80}
                className="w-20 h-20"
             />
             <div>
@@ -73,6 +77,8 @@ export default function WorkExperience() {
             <Image
                src="/gorillatechlogo.jpeg"
                alt="Gorilla Technology"
+               width={80}
+               height={80}
                className="w-20 h-20"
             />
             <div>
@@ -120,6 +126,8 @@ export default function WorkExperience() {
             <Image
                src="/jnj.png"
                alt="National Holdings"
+               width={80}
+               height={80}
                className="w-20 h-20"
             />
             <div>

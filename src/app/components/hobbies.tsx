@@ -79,6 +79,8 @@ export default function Hobbies() {
                     src={c.backSrc}
                     alt="Card Back"
                     className="w-full h-full object-cover rounded-lg"
+                    width="200"
+                    height="300"
                   />
                 }
               />

@@ -12,6 +12,8 @@ export default function Education() {
             <Image
                src="https://icons.auckland.ac.nz/assets/logos/uoa/horizontal/uoa_logo.svg"
                alt="University of Auckland Logo"
+               width={48}
+               height={12}
                className="w-48 h-auto"
             />
             <div>
@@ -30,6 +32,8 @@ export default function Education() {
             <Image
                src="./jugglerewards.svg"
                alt="Juggle Rewards"
+               width={48}
+               height={12}
                className="w-48 h-auto"
             />
             <div>
