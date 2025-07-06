@@ -2,6 +2,7 @@
 import React from 'react';
 import TCGCardFront from "./tcgfront";
 import FlipCard from './flipcard';
+import Image from 'next/image';
 
 export default function Hobbies() {
 
@@ -74,7 +75,7 @@ export default function Hobbies() {
                   />
                 }
                 back={
-                  <img
+                  <Image
                     src={c.backSrc}
                     alt="Card Back"
                     className="w-full h-full object-cover rounded-lg"

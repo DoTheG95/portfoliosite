@@ -1,5 +1,6 @@
 'use client'
 import WorldIcon from "./worldicon";
+import Image from "next/image";
 
 export default function WorkExperience() {
    return (
@@ -8,10 +9,10 @@ export default function WorkExperience() {
             Work Experience
          </h4>
          <div className="flex pt-8 pl-8 sm:text-left gap-4">
-            <img
-            src="/briskicon_new.png"
-            alt="Brisk Cloudware"
-            className="w-20 h-20"
+            <Image
+               src="/briskicon_new.png"
+               alt="Brisk Cloudware"
+               className="w-20 h-20"
             />
             <div>
                <div>June 2024 - June 2025 (12 month Contract) </div>
@@ -19,7 +20,7 @@ export default function WorkExperience() {
                   Brisk Cloudware (NCH Software)
                </div>
                Front End Developer <br/>
-               Front end development of 'Brisk Appointment', a web-based scheduling platform. <br />
+               Front end development of Brisk Appointment, a web-based scheduling platform. <br />
                Worked closely with product managers to implement new features, resolve bugs, and improve overall performance and user experience<br/>
                Update internal library with new components to be reused within the vast products of Brisk Cloudware and NCH Software <br/>
                <br />
@@ -33,10 +34,10 @@ export default function WorkExperience() {
             </div>
          </div>
          <div className="flex pt-12 pl-8 sm:text-left gap-4">
-            <img
-            src="/ezyvet.png"
-            alt="ezyVet"
-            className="w-20 h-20"
+            <Image
+               src="/ezyvet.png"
+               alt="ezyVet"
+               className="w-20 h-20"
             />
             <div>
                Aug 2021 - Feb 2024 (Full time)<br />
@@ -69,10 +70,10 @@ export default function WorkExperience() {
             </div>
          </div>
          <div className="flex pt-12 pl-8 sm:text-left gap-4">
-            <img
-            src="/gorillatechlogo.jpeg"
-            alt="Gorilla Technology"
-            className="w-20 h-20"
+            <Image
+               src="/gorillatechlogo.jpeg"
+               alt="Gorilla Technology"
+               className="w-20 h-20"
             />
             <div>
                Aug 2019 - Aug 2021 <br />
@@ -116,10 +117,10 @@ export default function WorkExperience() {
             </div>
          </div>
          <div className="flex pt-12 pl-8 sm:text-left gap-4">
-            <img
-            src="/jnj.png"
-            alt="National Holdings"
-            className="w-20 h-20"
+            <Image
+               src="/jnj.png"
+               alt="National Holdings"
+               className="w-20 h-20"
             />
             <div>
             Sep 2018 - June 2019 (Full time) <br />
@@ -127,7 +128,7 @@ export default function WorkExperience() {
                National Holdings / JNJ Management
             </div>
             IT Admin <br />
-            Managed all IT infrastructure and assets in the 'Sky World' building  <br />
+            Managed all IT infrastructure and assets in the Sky World building  <br />
             <br />
             <b>Key Responsibilities & Achievements: </b><br />
             <ul className="list-disc ml-5 mt-2">

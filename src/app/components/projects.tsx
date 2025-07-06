@@ -10,8 +10,8 @@ export default function Projects() {
          <div className="border border-white">
             Fearless Nuzlocke tracker <br />
             The goal: <br />
-            Allow players to easily track their 'Pokemon Nuzlocke' experience <br/>
-            With a new custom rule set I devised called the 'Fearless Nuzlocke' <br />
+            Allow players to easily track their Pokemon Nuzlocke experience <br/>
+            With a new custom rule set I devised called the Fearless Nuzlocke <br />
             Read more about it here:  
             <a 
             href="https://www.oneesports.gg/league-of-legends/what-is-fearless-draft/"  className="text-blue-500 underline hover:text-blue-700" target="_blank"> 

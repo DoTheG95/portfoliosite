@@ -9,10 +9,10 @@ export default function Education() {
             Education
          </h4>
          <div className="flex pl-4 sm:text-left gap-4 items-start">
-            <img
-            src="https://icons.auckland.ac.nz/assets/logos/uoa/horizontal/uoa_logo.svg"
-            alt="University of Auckland Logo"
-            className="w-48 h-auto"
+            <Image
+               src="https://icons.auckland.ac.nz/assets/logos/uoa/horizontal/uoa_logo.svg"
+               alt="University of Auckland Logo"
+               className="w-48 h-auto"
             />
             <div>
             2014 - 2017 <br />
@@ -27,10 +27,10 @@ export default function Education() {
             Start ups
          </h4>
          <div className="flex pl-4 pt-6 sm:text-left gap-4 items-start">
-            <img
-            src="./jugglerewards.svg"
-            alt="Juggle Rewards"
-            className="w-48 h-auto"
+            <Image
+               src="./jugglerewards.svg"
+               alt="Juggle Rewards"
+               className="w-48 h-auto"
             />
             <div>
                June 2023 - Feb 2024 (Contract) <br />
@@ -48,19 +48,19 @@ export default function Education() {
                   <li> GitHub version control, streamlining collaboration and ensuring safe, trackable code deployments.</li>
                </ul>
                <a
-               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-               href="https://jugglerewards.app/"
-               target="_blank"
-               rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                  href="https://jugglerewards.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                >
                   <WorldIcon />
                   Juggle Rewards Home Page - (React)
                </a>
                <a
-               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-               href="https://play.google.com/store/apps/details?id=com.juggle.jugglerewards"
-               target="_blank"
-               rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                  href="https://play.google.com/store/apps/details?id=com.juggle.jugglerewards"
+                  target="_blank"
+                  rel="noopener noreferrer"
                >
                   <Image
                      aria-hidden
