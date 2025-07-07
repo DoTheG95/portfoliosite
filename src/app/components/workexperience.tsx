@@ -28,11 +28,26 @@ export default function WorkExperience() {
                <br />
                <b>Key Achievements: </b><br />
                <ul className="list-disc ml-5 mt-2">
+                  <li>
+                     Work on the frontend of the Brisk Cloudware booking software:
+                     <ul className="list-disc ml-5">
+                        <li>
+                           <a
+                           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                           href="https://appointment.briskcloudware.com/index.html"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >
+                           <WorldIcon />
+                           Brisk Appointment
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
                   <li> Modernised the UI of the landing page using vanilla JavaScript, HTML, CSS  </li>
                   <li> Update the appointment form so that fields are more interactive with utilisation of comboboxes </li>
                   <li> Load data such as user permissions, saved bookings and other customised settings from the database </li>
                </ul>
-               Tech Stack:  HTML, CSS, Vanilla JS
             </div>
          </div>
          <div className="flex pt-12 pl-8 sm:text-left gap-4">

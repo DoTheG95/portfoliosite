@@ -15,7 +15,16 @@ export default function Home() {
 
   const TextTyped = () => {
     const [text] = useTypewriter({
-      words: ['Love challenges', 'Not afraid to try something new', 'Optimistic', 'Attentive to detail', 'Problem solver', 'Client first attitude'],
+      words: [
+        'I embrace challenges',
+        'I always aim to improve',
+        'I adapt quickly to try something new',
+        'I thrive in coming up with new ideas',
+        'I am always optimistic',
+        'I pay close attention to detail',
+        'I love to solve problems',
+        'I carry a client first mindset'
+      ],
       loop: 0,
       typeSpeed: 90,
     })
@@ -57,7 +66,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:justify-between w-full gap-8">
           <div className="flex gap-4 items-center flex-col sm:flex-row">
-            Here is a little about me:
+            Why I am the Right Choice for Your Engineering Team:
             <TextTyped />
           </div>
           <div className="flex">
@@ -67,6 +76,7 @@ export default function Home() {
           
         <div> 
           <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
+          <span className="flag-icon flag-icon-kr">KR</span>
             I was born in Korea 🇰🇷 and raised in New Zealand 🇳🇿 <br />
             I am currently based in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
