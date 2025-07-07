@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-center sm:justify-between w-full gap-8">
           <div className="flex-1">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center sm:text-left leading-tight">
-              Hi
+              Hi Test 
               <span className="text-[rgb(0_199_255)]"> nice </span>
               to
               <span className="text-[rgb(0_199_255)]"> meet you </span>
