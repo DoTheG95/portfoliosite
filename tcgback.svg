@@ -1,0 +1,88 @@
+<svg
+  width="200" height="300"
+  viewBox="0 0 200 300"
+  xmlns="http://www.w3.org/2000/svg"
+  shape-rendering="crispEdges"
+>
+  <!-- 1) Solid dark base -->
+  <rect
+    x="0" y="0"
+    width="200" height="300"
+    rx="12" ry="12"
+    fill="#0a0a0a"
+  />
+
+  <!-- 2) Outer accent-blue border -->
+  <rect
+    x="2" y="2"
+    width="196" height="296"
+    rx="10" ry="10"
+    fill="none"
+    stroke="rgb(0,199,255)"
+    stroke-width="4"
+  />
+
+  <!-- 3) Dark interior panel -->
+  <rect
+    x="10" y="10"
+    width="180" height="280"
+    rx="8" ry="8"
+    fill="#0a0a0a"
+  />
+
+  <!-- 4) Thin white border, moved inside -->
+  <rect
+    x="12" y="12"
+    width="176" height="276"
+    rx="7" ry="7"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1"
+  />
+
+  <!-- 5) Central white ring -->
+  <circle
+    cx="100" cy="150"
+    r="45"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="2"
+  />
+
+  <!-- 6) Pixel-art 'G' in accent blue -->
+  <g fill="rgb(0,199,255)">
+    <rect x="79"  y="129" width="6" height="6"/>
+    <rect x="85"  y="129" width="6" height="6"/>
+    <rect x="91"  y="129" width="6" height="6"/>
+    <rect x="97"  y="129" width="6" height="6"/>
+    <rect x="103" y="129" width="6" height="6"/>
+    <rect x="109" y="129" width="6" height="6"/>
+    <rect x="115" y="129" width="6" height="6"/>
+
+    <rect x="79"  y="135" width="6" height="6"/>
+    <rect x="79"  y="141" width="6" height="6"/>
+    <rect x="103" y="141" width="6" height="6"/>
+    <rect x="109" y="141" width="6" height="6"/>
+    <rect x="115" y="141" width="6" height="6"/>
+
+    <rect x="79"  y="147" width="6" height="6"/>
+    <rect x="103" y="147" width="6" height="6"/>
+    <rect x="115" y="147" width="6" height="6"/>
+
+    <rect x="79"  y="153" width="6" height="6"/>
+    <rect x="103" y="153" width="6" height="6"/>
+    <rect x="109" y="153" width="6" height="6"/>
+    <rect x="115" y="153" width="6" height="6"/>
+
+    <rect x="79"  y="159" width="6" height="6"/>
+    <rect x="115" y="159" width="6" height="6"/>
+
+    <rect x="79"  y="165" width="6" height="6"/>
+    <rect x="85"  y="165" width="6" height="6"/>
+    <rect x="91"  y="165" width="6" height="6"/>
+    <rect x="97"  y="165" width="6" height="6"/>
+    <rect x="103" y="165" width="6" height="6"/>
+    <rect x="109" y="165" width="6" height="6"/>
+    <rect x="115" y="165" width="6" height="6"/>
+  </g>
+</svg>

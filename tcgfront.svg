@@ -1,0 +1,58 @@
+<svg
+  width="200" height="300"
+  viewBox="0 0 200 300"
+  xmlns="http://www.w3.org/2000/svg"
+  shape-rendering="crispEdges"
+>
+  <!-- 1) White base card -->
+  <rect
+    x="0" y="0"
+    width="200" height="300"
+    rx="12" ry="12"
+    fill="#ffffff"
+  />
+
+  <!-- 2) Image area (bigger: 60% + 10px = 190px) -->
+  <rect
+    x="10" y="10"
+    width="180" height="190"
+    fill="#cccccc"
+  />
+
+  <!-- 3) Title box (black, rounded) -->
+  <rect
+    x="10" y="210"
+    width="180" height="30"
+    rx="5" ry="5"
+    fill="#0a0a0a"
+  />
+  <text
+    x="100" y="225"
+    fill="#ffffff"
+    font-family="monospace"
+    font-size="12"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >
+    CARD NAME
+  </text>
+
+  <!-- 4) Description box (black, rounded) for up to 3 lines -->
+  <rect
+    x="10" y="250"
+    width="180" height="40"
+    rx="5" ry="5"
+    fill="#0a0a0a"
+  />
+  <text
+    x="100" y="260"
+    fill="#ffffff"
+    font-family="monospace"
+    font-size="7"
+    text-anchor="middle"
+  >
+    <tspan x="100" dy="0">Line One of description</tspan>
+    <tspan x="100" dy="9">Line Two of description</tspan>
+    <tspan x="100" dy="9">Line Three of description</tspan>
+  </text>
+</svg>
