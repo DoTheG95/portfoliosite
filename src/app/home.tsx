@@ -76,7 +76,6 @@ export default function Home() {
           
         <div> 
           <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
-          <span className="flag-icon flag-icon-kr">KR</span>
             I was born in Korea 🇰🇷 and raised in New Zealand 🇳🇿 <br />
             I am currently based in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
