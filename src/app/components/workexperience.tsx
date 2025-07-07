@@ -82,7 +82,7 @@ export default function WorkExperience() {
                className="w-20 h-20"
             />
             <div>
-               Aug 2019 - Aug 2021 <br />
+               Aug 2019 - Aug 2021 (Full time)<br />
                <div className="text-xl sm:text-xl md:text-xl font-bold">
                   Gorilla Technology
                </div>

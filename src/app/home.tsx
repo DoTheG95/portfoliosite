@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-center sm:justify-between w-full gap-8">
           <div className="flex-1">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center sm:text-left leading-tight">
-              Hi Test 
+              Hi 
               <span className="text-[rgb(0_199_255)]"> nice </span>
               to
               <span className="text-[rgb(0_199_255)]"> meet you </span>
@@ -67,8 +67,8 @@ export default function Home() {
           
         <div> 
           <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
-            I am a Korean 🇰🇷 raised in New Zealand 🇳🇿 <br />
-            Currently in Brisbane looking for great opportunities in Australia 🇦🇺
+            I was born in Korea 🇰🇷 and raised in New Zealand 🇳🇿 <br />
+            I am currently based in Brisbane looking for great opportunities in Australia 🇦🇺
           </h4>
         </div>
         <div className="w-full max-w-screen-xl mx-auto">
