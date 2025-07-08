@@ -47,9 +47,9 @@ export default function Education() {
                <b>Key Responsibilities & Achievements: </b><br />
                <ul className="list-disc ml-5 mt-2">
                   <li> Replicated Figma wireframes using TypeScript to create functional interfaces, ensuring pixel-perfect replication and smooth interactivity.</li>
-                  <li> Managed Jira tickets and leading Agile sprints as Scrum Master, driving timely and efficient results for a team of 3 developers.</li>
+                  <li> Managed Jira tickets and led Agile sprints as Scrum Master, driving timely and efficient results for a team of 3 developers.</li>
                   <li> Maintained a high standard of code quality by adhering to clean code principles and enforcing consistent code review practices. </li>
-                  <li> GitHub version control, streamlining collaboration and ensuring safe, trackable code deployments.</li>
+                  <li> Used GitHub to manage version control, streamlining collaboration and ensuring safe, trackable code deployments.</li>
                </ul>
                <a
                   className="flex items-center gap-2 hover:underline hover:underline-offset-4"
