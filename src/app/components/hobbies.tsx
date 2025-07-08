@@ -13,9 +13,9 @@ export default function Hobbies() {
         imageSrc: './bouldering.png',
         name: 'Bouldering',
         description: [
-          'Problem Solving',
-          'Tenacity',
-          'Hunger for improvement'
+          'Effective problem solving',
+          'Tenacity to never give up and try again',
+          'Determination to complete the task'
         ],
         iconSrc: './globe.svg',
         iconLink: 'https://instagram.com/dotheg_archives/'
@@ -27,9 +27,9 @@ export default function Hobbies() {
         imageSrc:"./travelling.png",
           name:"Travelling",
           description:[
-            'Planning ahead',
-            'Research',
-            'Adaptability '
+            'Time mangement',
+            'Organisation of resources',
+            'Adapt to unexpected situations'
           ],
           iconSrc:"./globe.svg",
           iconLink:"https://www.instagram.com/wrappergary/"
@@ -41,9 +41,9 @@ export default function Hobbies() {
         imageSrc:"./photo.png",
           name:"Photography",
           description:[
-            'Patience',
-            'Attention to detail',
-            'Understanding of Visual Composition'
+            'Patience for optimal results',
+            'Great attention to detail',
+            'Captivate audience visually'
           ],
           iconSrc:"./globe.svg",
           iconLink:"https://www.instagram.com/aussie_short_shoots/",
