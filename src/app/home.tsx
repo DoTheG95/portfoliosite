@@ -8,6 +8,7 @@ import Education from "./components/education";
 import TechStack from "./components/techstack";
 import Hobbies from "./components/hobbies";
 import Projects from "./components/projects";
+import Comingsoon from "./components/comingsoon";
 
 export default function Home() {
 
@@ -92,6 +93,7 @@ export default function Home() {
           <TechStack />
           <Hobbies />
           <Projects />
+          <Comingsoon />
       </main>
     </div>
   );

@@ -7,16 +7,23 @@ export default function Projects() {
          <h4 className="text-2xl text-align:center sm:text-2xl md:text-2xl font-bold">
             Projects
          </h4>
-         <div className="border border-white">
-            Fearless Nuzlocke tracker <br />
-            The goal: <br />
-            Allow players to easily track their Pokemon Nuzlocke experience <br/>
+         <div className="pl-4 pr-4 pt-4 border border-white">
+            <div className="text-xl sm:text-xl md:text-xl font-bold flex flex-row">
+               <a 
+                  href="http://fearlesslocke.xyz/" 
+                  target="_blank"
+                  className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-colors"
+                  > Fearless Nuzlocke tracker </a>
+            </div>
+            <br />
+            This is a personal project I worked on because I really love the game [Pokemon] <br />
+            As well as challenges and a very common challenge from the community is a set of self-set rules called a Nuzlocke <br/>
+            I wanted to come up with a way to easily visually track Pokemon that I have used in my Nuzlocke playthrough. <br/>
             With a new custom rule set I devised called the Fearless Nuzlocke <br />
-            Read more about it here:  
-            <a 
-            href="https://www.oneesports.gg/league-of-legends/what-is-fearless-draft/"  className="text-blue-500 underline hover:text-blue-700" target="_blank"> 
-               Rules of the Fearless Nuzlocke 
-            </a>
+            <br/>
+            The site will load the Pokemon entries based on the Pokedex selected
+            <br />
+            You can also search and filter for Pokemon based on their types as well
             <br />
             <Image
                src="/nuzlocke_main.png"
@@ -25,14 +32,14 @@ export default function Projects() {
                height={300}
             />
             <br />
-            Click on the Pokemon to indicate any captures
+            You can then click on the image to grey-out any pokemon you have caught or missed to keep track of your progress
             <Image
                src="/nuzlocke_example.png"
                alt="Profile picture"
                width={1400}
                height={300}
             />
-            Visit the full page and play around with the features here: 
+            <br />
          </div>
       </div>
    );

@@ -54,7 +54,7 @@ export default function Hobbies() {
 
   return (
     <section className="w-full max-w-screen-xl mx-auto">
-      <h4 className="text-2xl font-bold mb-4">Hobbies</h4>
+      <h4 className="text-2xl font-bold">Hobbies</h4>
       <div className="border border-white p-4">
         <div
           className="
