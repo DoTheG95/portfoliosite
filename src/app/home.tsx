@@ -73,13 +73,6 @@ export default function Home() {
             <Socials />
           </div>
         </div>
-          
-        <div> 
-          <h4 className="text-2xl sm:text-2xl md:text-2xl font-bold text-center sm:text-left leading-tight">
-            I was born in Korea 🇰🇷 and raised in New Zealand 🇳🇿 <br />
-            I am currently based in Brisbane looking for great opportunities in Australia 🇦🇺
-          </h4>
-        </div>
         <div className="w-full max-w-screen-xl mx-auto">
           <div role="tablist" className="flex border border-white flex-wrap">
             <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('work')}>
