@@ -22,14 +22,11 @@ export default function WorkExperience() {
                   Brisk Cloudware (NCH Software)
                </div>
                Front End Developer <br/>
-               Front end development of Brisk Appointment, a web-based scheduling platform. <br />
-               Worked closely with product managers to implement new features, resolve bugs, and improve overall performance and user experience<br/>
-               Update internal library with new components to be reused within the vast products of Brisk Cloudware and NCH Software <br/>
                <br />
-               <b>Key Achievements: </b><br />
+               <b>Key Achievements: </b>
                <ul className="list-disc ml-5 mt-2">
                   <li>
-                     Work on the frontend of the Brisk Cloudware booking software:
+                     Worked on the front end of the Brisk Cloudware booking software:
                      <ul className="list-disc ml-5">
                         <li>
                            <a
@@ -45,8 +42,14 @@ export default function WorkExperience() {
                      </ul>
                   </li>
                   <li> Modernised the UI of the landing page using vanilla JavaScript, HTML, CSS  </li>
-                  <li> Update the appointment form so that fields are more interactive with utilisation of comboboxes </li>
-                  <li> Load data such as user permissions, saved bookings and other customised settings from the database </li>
+                  <li> Worked closely with Product Manager and other developers to deliver new features and investigate/resolve any reported bugs</li>
+                  <li> Improved first-time user retention by designing and deploying targeted feature flags </li>
+                  <li> Enhanced overall user experience through introcuding features like: </li>
+                   <ul className="list-disc ml-5">
+                     <li> <b>Combobox</b> - Enabled users to freely search and enter records such as client names</li>
+                     <li> <b>Out of hour bookings</b> - Allowed appointments to be booked outside the standard times for special occasions </li>
+                     <li> <b>Context menu</b> -  Streamlined common actions (e.g., booking appointments, blocking time slots) directly from the appointment grid </li>
+                  </ul>
                </ul>
             </div>
          </div>
@@ -63,12 +66,20 @@ export default function WorkExperience() {
                <div className="text-xl sm:text-xl md:text-xl font-bold">
                   ezyVet
                </div>
-               Intermediate Software Solutions Advisor <br />
-               Delivered software training, technical support, and documentation for ezyVet; a cloud-based veterinary SaaS practice management system. <br />
-               Supported a global user base, contributed to revenue retention, and led cross-functional initiatives across customer support, training, and testing. <br />
+               Intermediate Software Solutions Advisor <br/>
                <br />
-               <b>Key Responsibilities & Achievements: </b><br />
+               <b>Key Achievements: </b>
                <ul className="list-disc ml-5 mt-2">
+                  <li>Delivered software training, technical support, and documentation for stakeholders. </li>
+                  <li>Supported a global user base, contributed to revenue retention, and led cross-functional initiatives across customer support, and the QA team.</li>
+                  <li>Performed testing on reported bugs and identifeid core workflows which were logged in the Jira and reviewed with QA and devs</li>
+                  <li>Utilised PHP to generate custom TWIG templates to generate additional revenue </li>
+                   <li>Implement an effective training program for onboarding new team members for more technical aspects of the software; such as: </li>
+                   <ul className="list-disc ml-5">
+                     <li>Hardware troubleshooting steps</li>
+                     <li>Configuration of IP and other windows settings for optimal efficiency</li>
+                     <li>Break down of TWIG (PHP) coding to produce simple document templates</li>
+                  </ul>
                   <li>Created universal resources for stakeholders to easily navigate core functions of ezyVet</li>
                   <ul className="list-disc ml-5">
                      <li>
@@ -83,8 +94,6 @@ export default function WorkExperience() {
                         </a>
                      </li>
                   </ul>
-                  <li>Performed testing on reported bugs and Identifeid core workflows to report to developers in the Jira</li>
-                  <li>Created TWIG docuemnts using HTML for custom documentation</li>
                </ul>
             </div>
          </div>
@@ -101,11 +110,11 @@ export default function WorkExperience() {
                <div className="text-xl sm:text-xl md:text-xl font-bold">
                   Gorilla Technology
                </div>
-               L3/L4 Technician & Audiovisual Engineer <br />
-               Provided IT support for customers in NZ such as the Cancer Society NZ<br />
+               IT Technician & Audiovisual Engineer <br/>
                <br />
-               <b>Key Responsibilities & Achievements: </b><br />
+               <b>Key Achievements: </b><br />
                <ul className="list-disc ml-5 mt-2">
+                  <li> Provided IT support (L1/L2/L3) for customers including large organisations such as the Cancer Society NZ with over 500 users </li>
                   <li>Managed core sites for Gorilla Technology and World Podcasts</li>
                      <ul className="list-disc ml-5">
                         <li>
@@ -150,36 +159,38 @@ export default function WorkExperience() {
             <div className="text-xl sm:text-xl md:text-xl font-bold">
                National Holdings / JNJ Management
             </div>
-            IT Admin <br />
-            Managed all IT infrastructure and assets in the Sky World building  <br />
-            <br />
-            <b>Key Responsibilities & Achievements: </b><br />
+            IT Admin <br/>
+            <br/>
+            <b>Key Achievements: </b><br />
             <ul className="list-disc ml-5 mt-2">
+               <li> Managed all IT infrastructure and assets in the Sky World building </li>
                <li> Including all related websites: </li>
-               <li>
-                  <a
-                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                  href="https://worldpodcasts.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                     <WorldIcon />
-                     Sky World
-                  </a>
-               </li>
-               <li>
-                  <a
-                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                  href="https://www.metrolanes.co.nz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                     <WorldIcon />
-                     Metrolanes
-                  </a>
-               </li>
-               <li>WWW.PASTAMAGO.CO.NZ (Discontinued)</li>
-               <li>WWW.CHICKENCLUB.CO.NZ (Discontinued)</li>
+               <ul className="list-disc ml-5">
+                  <li>
+                     <a
+                     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                     href="https://worldpodcasts.com/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >
+                        <WorldIcon />
+                        Sky World
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                     href="https://www.metrolanes.co.nz/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >
+                        <WorldIcon />
+                        Metrolanes
+                     </a>
+                  </li>
+                  <li>WWW.PASTAMAGO.CO.NZ (Discontinued)</li>
+                  <li>WWW.CHICKENCLUB.CO.NZ (Discontinued)</li>
+               </ul>
             </ul>
             </div>
          </div>
