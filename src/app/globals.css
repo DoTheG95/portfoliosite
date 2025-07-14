@@ -35,11 +35,6 @@ body {
   transform-style: preserve-3d;
 }
 
-/* rotate on hover */
-.group-hover\:rotate-y-180:hover .group-hover\:rotate-y-180 {
-  transform: rotateY(180deg);
-}
-
 /* hide the “back” when face-on */
 .backface-hidden {
   backface-visibility: hidden;

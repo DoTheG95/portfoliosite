@@ -1,3 +1,4 @@
+// **File:** components/TCGCardFront.tsx
 import React from 'react'
 
 export interface TCGCardFrontProps {
@@ -16,8 +17,8 @@ export default function TCGCardFront({
   description,
   iconSrc,
   iconLink,
-  width = 400,
-  height = 600
+  width = 300,
+  height = 550
 }: TCGCardFrontProps) {
   const padding = 10
   // Image covers 75% of the card height
@@ -32,6 +33,7 @@ export default function TCGCardFront({
   const descHeight = height - descY - padding
 
   const descLines = description.slice(0, 3)
+  const rx = 16 // corner radius for top corners
 
   return (
     <svg
@@ -49,10 +51,18 @@ export default function TCGCardFront({
         fill="#ffffff"
       />
 
-      {/* Image area (75%) */}
+      {/* Image area (75%) with only top corners rounded */}
       <defs>
-        <clipPath id="cardImageClip">
-          <rect x={padding} y={imageY} width={width - padding * 2} height={imageHeight} />
+        <clipPath id="cardImageClip" clipPathUnits="userSpaceOnUse">
+          <path d={`
+            M ${padding},${imageY + rx}
+            A ${rx},${rx} 0 0 1 ${padding + rx},${imageY}
+            H ${width - padding - rx}
+            A ${rx},${rx} 0 0 1 ${width - padding},${imageY + rx}
+            V ${imageY + imageHeight}
+            H ${padding}
+            Z
+          `} />
         </clipPath>
       </defs>
       <image

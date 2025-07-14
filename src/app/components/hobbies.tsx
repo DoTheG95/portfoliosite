@@ -13,9 +13,8 @@ export default function Hobbies() {
         imageSrc: './bouldering.png',
         name: 'Bouldering',
         description: [
-          'Effective problem solving',
-          'Tenacity to never give up and try again',
-          'Determination to complete the task'
+          'Love problem solving',
+          'Not scared of failing',
         ],
         iconSrc: './globe.svg',
         iconLink: 'https://instagram.com/dotheg_archives/'
@@ -28,7 +27,6 @@ export default function Hobbies() {
           name:"Travelling",
           description:[
             'Time mangement',
-            'Organisation of resources',
             'Adapt to unexpected situations'
           ],
           iconSrc:"./globe.svg",
@@ -41,9 +39,8 @@ export default function Hobbies() {
         imageSrc:"./photo.png",
           name:"Photography",
           description:[
-            'Patience for optimal results',
+            'Hunger for optimal result',
             'Great attention to detail',
-            'Captivate audience visually'
           ],
           iconSrc:"./globe.svg",
           iconLink:"https://www.instagram.com/aussie_short_shoots/",
