@@ -12,7 +12,7 @@ export default function Comingsoon() {
             <br/>
             Chat feature - ask the chat anything about my work experience or any questions you may have for me.
             <br/>
-            Review from colleagues - coworker evaluation on my work and dynamic in a team
+            More projects to be updated 
             <br />
             <br />
          </div>
