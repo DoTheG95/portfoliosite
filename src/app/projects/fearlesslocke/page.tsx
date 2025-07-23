@@ -60,7 +60,7 @@ export default function Projects() {
                   height={300}
                />
                <br />
-               You can then click on the Pokemon you have caught or missed to keep track of your progress - this will update to all the relevant evolution chains of the selected Pokemon. <br/>
+               You can then click on the Pokemon you have caught or missed to keep track of your progress - this will update to all the relevt evolution chains of the selected Pokemon. <br/>
                Example screen shot of clicking `&apos;`Charmandar`&apos;` resulting in `&apos;`Charmeleon`&apos;` and `&apos;`Charizard`&apos;` being selected.
                <Image
                   src="/nuzlocke_example.png"
