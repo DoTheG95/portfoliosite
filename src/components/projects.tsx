@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import WorldIcon from "./worldicon";
+import Link from 'next/link';
 
 export default function Projects() {
    return (
@@ -30,9 +31,9 @@ export default function Projects() {
                width={1400}
                height={300}
             />
-            <a href="../pages/fearlesslocke.tsx" >
+            <Link href="/projects/fearlesslocke" className="text-[rgb(0_199_255)]">
                Read more here ... 
-            </a>
+            </Link>
             <br />
          </div>
       </div>

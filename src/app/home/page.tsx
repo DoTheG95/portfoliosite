@@ -1,14 +1,14 @@
 'use client'
 import Image from "next/image";
-import Socials from "../components/socials";
+import Socials from "../../components/socials";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { useState } from 'react';
-import WorkExperience from "../components/workexperience";
-import Education from "../components/education";
-import TechStack from "../components/techstack";
-import Hobbies from "../components/hobbies";
-import Projects from "../components/projects";
-import Comingsoon from "../components/comingsoon";
+import WorkExperience from "../../components/workexperience";
+import Education from "../../components/education";
+import TechStack from "../../components/techstack";
+import Hobbies from "../../components/hobbies";
+import Projects from "../../components/projects";
+import Comingsoon from "../../components/comingsoon";
 
 export default function Home() {
 
