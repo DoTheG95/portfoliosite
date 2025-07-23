@@ -21,29 +21,18 @@ export default function Projects() {
                </a>
             </div>
             <br />
-            This is a personal project I worked on because I really love the game [Pokemon] <br />
-            As well as challenges and a very common challenge from the community is a set of self-set rules called a Nuzlocke <br/>
-            I wanted to come up with a way to easily visually track Pokemon that I have used in my Nuzlocke playthrough. <br/>
-            With a new custom rule set I devised called the Fearless Nuzlocke <br />
-            <br/>
-            The site will load the Pokemon entries based on the Pokedex selected
-            <br />
-            You can also search and filter for Pokemon based on their types as well
-            <br />
+            If you are fan of the popular franchise [Pokemon] - this is a web app where you can keep track of your Nuzlocke Experience<br/>
+            It is also designed to work with a Unique new rule I devised called the [fearlesslocke] <br/>
+            Some key features are: search feature / filter by type / log [Pokemon] used through out your playthrough <br/>
             <Image
                src="/nuzlocke_main.png"
                alt="Profile picture"
                width={1400}
                height={300}
             />
-            <br />
-            You can then click on the image to grey-out any pokemon you have caught or missed to keep track of your progress
-            <Image
-               src="/nuzlocke_example.png"
-               alt="Profile picture"
-               width={1400}
-               height={300}
-            />
+            <a href="../pages/fearlesslocke.tsx" >
+               Read more here ... 
+            </a>
             <br />
          </div>
       </div>
