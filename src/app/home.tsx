@@ -69,6 +69,19 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full max-w-screen-xl mx-auto">
+          <h4 className="text-2xl text-align:center sm:text-2xl md:text-2xl font-bold">
+            TLDR
+         </h4>
+          <div className="flex border border-white flex-wrap">
+            <div className="flex p-4 sm:text-left gap-4">
+              If you are seeking a developer who combines clean, responsive code with genuine empathy for the end user, I bring both technical expertise and user-centered thinking to every project. I am skilled in developing front-end components and interactive web experiences with a strong focus on usability, accessibility, and performance. 
+              <br/>
+              <br/>
+              My name is Gary and my goal is not only to build functional solutions but to create interfaces that users find intuitive, engaging, and enjoyable to use. I hope we can work together so that we can create impactful software. 
+            </div>
+          </div>
+        </div>
+        <div className="w-full max-w-screen-xl mx-auto">
           <div role="tablist" className="flex border border-white flex-wrap">
             <button
               role="tab"
