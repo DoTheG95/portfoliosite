@@ -22,7 +22,7 @@
 @layer components {
   /* Active tab styling */
   .active-button {
-    @apply border-b-4 border-[rgb(0,199,255)] text-[rgb(0,199,255)] font-bold flex-1 border-white text-center py-2;
+    @apply border-b text-[rgb(0,199,255)] font-bold flex-1 border-white text-center py-2;
   }
 
   /* Inactive tab styling */

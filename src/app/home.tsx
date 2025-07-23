@@ -17,14 +17,8 @@ export default function Home() {
   const TextTyped = () => {
     const [text] = useTypewriter({
       words: [
-        'I embrace challenges',
-        'I always aim to improve',
-        'I adapt quickly to try something new',
-        'I thrive in coming up with new ideas',
-        'I am always optimistic',
-        'I pay close attention to detail',
-        'I love to solve problems',
-        'I carry a client first mindset'
+        'I love to solve problems and write clean code',
+        'I carry a client first mindset and pay close attention to detail'
       ],
       loop: 0,
       typeSpeed: 90,
