@@ -19,6 +19,17 @@
   }
 }
 
+@layer components {
+  /* Active tab styling */
+  .active-button {
+    @apply border-b-4 border-[rgb(0,199,255)] text-[rgb(0,199,255)] font-bold flex-1 border-white text-center py-2;
+  }
+
+  /* Inactive tab styling */
+  .inactive-button {
+    @apply border-b border-white text-white/75 hover:text-white flex-1 border-white text-center py-2;
+  }
+}
 body {
   overflow-x: hidden;
   background: var(--background);

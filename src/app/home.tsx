@@ -12,7 +12,7 @@ import Comingsoon from "./components/comingsoon";
 
 export default function Home() {
 
-  const [activeTab, setActiveTab] = useState('work'); 
+   const [activeTab, setActiveTab] = useState<'work'|'education'>('work');
 
   const TextTyped = () => {
     const [text] = useTypewriter({
@@ -76,10 +76,20 @@ export default function Home() {
         </div>
         <div className="w-full max-w-screen-xl mx-auto">
           <div role="tablist" className="flex border border-white flex-wrap">
-            <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('work')}>
+            <button
+              role="tab"
+              onClick={() => setActiveTab('work')}
+              className={`${ activeTab === 'work' ? 'active-button' : 'inactive-button' }`}
+              aria-selected={activeTab === 'work'}
+            >
               Work Experience
             </button>
-            <button type="button" role="tab" className="flex-1 border-white text-center py-2" onClick={() => setActiveTab('education')}>
+            <button 
+              role="tab" 
+              onClick={() => setActiveTab('education')}
+              className={`${ activeTab === 'education' ? 'active-button' : 'inactive-button' }`}
+              aria-selected={activeTab === 'education'}
+            >
               Education & Start ups
             </button>
           </div>

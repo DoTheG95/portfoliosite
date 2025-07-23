@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import WorldIcon from "./worldicon";
 
 export default function Projects() {
    return (
@@ -9,13 +10,15 @@ export default function Projects() {
          </h4>
          <div className="pl-4 pr-4 pt-4 border border-white">
             <div className="text-xl sm:text-xl md:text-xl font-bold flex flex-row">
-               {/* <a 
-                  href="http://fearlesslocke.xyz/" 
+               <a
+                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                  href="http://fearlesslocke.xyz/"
                   target="_blank"
-                  className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-colors"
-                  >  */}
-                  Fearless Nuzlocke tracker 
-                  {/* </a> */}
+                  rel="noopener noreferrer"
+                  >
+                  Fearless Nuzlocke tracker
+                  <WorldIcon />
+               </a>
             </div>
             <br />
             This is a personal project I worked on because I really love the game [Pokemon] <br />
