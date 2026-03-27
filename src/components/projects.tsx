@@ -3,6 +3,12 @@ import Image from "next/image";
 import WorldIcon from "./worldicon";
 import Link from 'next/link';
 
+const showElementById = (id: string) => {
+   const el = document.getElementById(id);
+   if (!el) return;
+   el.hidden = false;
+}
+
 export default function Projects() {
    return (
       <div className="w-full max-w-screen-xl mx-auto">
