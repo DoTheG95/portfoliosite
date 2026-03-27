@@ -7,12 +7,17 @@ export default function Comingsoon() {
             Coming Soon
          </h4>
          <div className="pl-4 pt-4 border border-white">
-            Features coming soon to this page:
-            <br/>
-            <br/>
-            Chat feature - ask the chat anything about my work experience or any questions you may have for me.
-            <br/>
-            More projects to be updated 
+            New Project uploads: 
+            <div className="text-l sm:text-l md:text-l font-bold flex flex-row">
+                  <a
+                     className="flex gap-2 hover:underline hover:underline-offset-4"
+                     href="https://www.cardboardaddiction.com/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >
+                     Community site for local trading card communities 
+                  </a>
+               </div>
             <br />
             <br />
          </div>
