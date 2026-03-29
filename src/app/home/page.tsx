@@ -4,11 +4,11 @@ import Socials from "../../components/socials";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { useState } from 'react';
 import WorkExperience from "../../components/workexperience";
-import Education from "../../components/education";
 import TechStack from "../../components/techstack";
 import Hobbies from "../../components/hobbies";
 import Projects from "../../components/projects";
 import Comingsoon from "../../components/comingsoon";
+import OtherWorkExperience from "../../components/otherworkexperience";
 
 export default function Home() {
 
@@ -77,7 +77,33 @@ export default function Home() {
               If you are seeking a developer who combines clean, responsive code with genuine empathy for the end user, I bring both technical expertise and user-centered thinking to every project. I am skilled in developing front-end components and interactive web experiences with a strong focus on usability, accessibility, and performance. 
               <br/>
               <br/>
-              My name is Gary and my goal is not only to build functional solutions but to create interfaces that users find intuitive, engaging, and enjoyable to use. I hope we can work together so that we can create impactful software. 
+              I love to dabble with new technologies and am always eager to learn. Recently I have been trying my hand with AI tools to help drive results faster while still carefully planning and analaysing project requirements.   
+            </div>
+          </div>
+        </div>
+        <div className="w-full max-w-screen-xl mx-auto">
+          <div className="flex border border-white flex-wrap">
+            <div className="w-full border border-white pb-4">
+              <h4 className="pl-4 pt-4 text-2xl sm:text-2xl md:text-2xl font-bold">
+                Education
+              </h4>
+              <div className="flex pl-4 sm:text-left gap-4 items-start">
+                <Image
+                    src="https://icons.auckland.ac.nz/assets/logos/uoa/horizontal/uoa_logo.svg"
+                    alt="University of Auckland Logo"
+                    width={48}
+                    height={12}
+                    className="w-48 h-auto"
+                />
+                <div>
+                2014 - 2017 <br />
+                <div className="text-xl sm:text-xl md:text-xl font-bold">
+                    The University of Auckland (UoA)
+                </div>
+                Bachelor of Science <br />
+                Double Major in Computer Science and Information Systems <br />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -97,19 +123,21 @@ export default function Home() {
               className={`${ activeTab === 'education' ? 'active-button' : 'inactive-button' }`}
               aria-selected={activeTab === 'education'}
             >
-              Education & Start ups
+              Projects
             </button>
           </div>
           {activeTab === 'work' && (
             <WorkExperience />
             )}
           {activeTab === 'education' && (
-            <Education />
+            <Projects />
           )}
         </div>
           <TechStack />
           <Hobbies />
-          <Projects />
+        <div className="w-full max-w-screen-xl mx-auto">
+          <OtherWorkExperience />
+        </div>
           <Comingsoon />
       </main>
     </div>

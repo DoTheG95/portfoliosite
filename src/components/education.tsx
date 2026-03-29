@@ -2,7 +2,7 @@
 import Image from "next/image";
 import WorldIcon from "./worldicon";
 
-export default function Education() {
+export default function Projects() {
    return (
       <div className="w-full border border-white pb-4">
          <h4 className="pl-4 pt-4 text-2xl sm:text-2xl md:text-2xl font-bold">
