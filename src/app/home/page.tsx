@@ -46,7 +46,7 @@ export default function Home() {
               I am 
               <span className="text-[rgb(0_199_255)]"> Gary</span>
               , a 
-              <span className="text-[rgb(0_199_255)]"> front end developer </span>
+              <span className="text-[rgb(0_199_255)]"> full stack developer </span>
             </h1>
           </div>
           <div className="flex-shrink-0">
@@ -69,12 +69,10 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full max-w-screen-xl mx-auto">
-          <h4 className="text-2xl text-align:center sm:text-2xl md:text-2xl font-bold">
-            TLDR
-         </h4>
           <div className="flex border border-white flex-wrap">
+            <h4 className="work-title">Hello World </h4>
             <div className="flex p-4 sm:text-left gap-4">
-              If you are seeking a developer who combines clean, responsive code with genuine empathy for the end user, I bring both technical expertise and user-centered thinking to every project. I am skilled in developing front-end components and interactive web experiences with a strong focus on usability, accessibility, and performance. 
+              I am a developer who writes clean, responsive code with a user-first approach, I bring both technical expertise and user-centered thinking to every project. I am skilled in developing front-end components and interactive web experiences with a strong focus on usability, accessibility, and performance. 
               <br/>
               <br/>
               I love to dabble with new technologies and am always eager to learn. Recently I have been trying my hand with AI tools to help drive results faster while still carefully planning and analaysing project requirements.   

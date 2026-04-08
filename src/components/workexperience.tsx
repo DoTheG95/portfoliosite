@@ -12,7 +12,7 @@ export default function WorkExperience() {
       {/* ===== The Capsulelab ===== */}
       <div className="work-item">
         <Image
-          src="/briskicon_new.png"
+          src="/the_capsule.png"
           alt="The Capsulelab"
           width={48}
           height={48}
@@ -35,7 +35,7 @@ export default function WorkExperience() {
           <ul className="work-list">
             <li>
               Create a web application for a startup company with the goal of providing a platform for users to store their digital assets in the IPFS:
-              <ul className="work-sublist">
+              {/* <ul className="work-sublist">
                 <li>
                   <a
                     className="work-link"
@@ -44,10 +44,28 @@ export default function WorkExperience() {
                     rel="noopener noreferrer"
                   >
                     <WorldIcon />
-                    The Capsule Lab
+                    The Capsule Lab 
                   </a>
                 </li>
-              </ul>
+              </ul> */}
+            </li>
+            <li>
+              Create iOS and VisionOS apps using Flutter and Dart. With responsive UIs utilising benefits of each OS such as spatial computing on the VisonOS.
+            </li>
+            <li>
+              Built a community post page for sharing articles and images. Allowing commenting and threaded comments
+            </li>
+            <li>
+              Built an admin dashboard with key features such as customising email templates and sending emails.
+            </li>
+            <li>
+              RESTFul API such as email js
+            </li>
+            <li>
+              Created documentation and aligned technical decisions within the team            
+            </li>
+            <li>
+              Implemented BIP‑39 mnemonic generation for passphrases to facilliate support secure user account recovery.           
             </li>
           </ul>
         </div>
@@ -170,7 +188,7 @@ export default function WorkExperience() {
                 </li>
             </ul>
             <li>
-                Replicated Figma wireframes though typescript to create functional user interfaces with the user's experience in mind.
+                Replicated Figma wireframes though typescript to create functional user interfaces with the user`s experience in mind.
             </li>
             <li>
                 Set up user authentication such as one time password (OTP) verification and email verifications.

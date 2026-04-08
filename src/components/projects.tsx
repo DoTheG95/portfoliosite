@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image";
 import WorldIcon from "./worldicon";
 import Link from 'next/link';
 
