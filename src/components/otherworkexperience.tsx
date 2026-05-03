@@ -2,198 +2,132 @@
 import WorldIcon from "./worldicon";
 import Image from "next/image";
 
+interface CareerEntry {
+  logo: string;
+  alt: string;
+  period: string;
+  company: string;
+  role: string;
+  achievements: React.ReactNode[];
+}
+
+const entries: CareerEntry[] = [
+  {
+    logo: '/ezyvet.png',
+    alt: 'ezyVet',
+    period: 'Aug 2021 – Feb 2024 · Full Time',
+    company: 'ezyVet',
+    role: 'Intermediate Software Solutions Advisor',
+    achievements: [
+      'Delivered software training, technical support and documentation for a global stakeholder base',
+      'Contributed to revenue retention through cross-functional work across customer support and QA',
+      'Tested and logged reported bugs in Jira, reviewed with QA and engineering',
+      'Wrote custom PHP/TWIG templates to generate additional client revenue',
+      'Designed and ran a technical onboarding programme covering hardware troubleshooting, network configuration and TWIG templating',
+      <>
+        Hosted a public-facing{' '}
+        <a
+          className="work-link"
+          href="https://www.ezyvet.com/webinar/ezyprint"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WorldIcon /> ezyPrint Webinar
+        </a>{' '}
+        covering core platform workflows
+      </>,
+    ],
+  },
+  {
+    logo: '/gorillatechlogo.jpeg',
+    alt: 'Gorilla Technology',
+    period: 'Aug 2019 – Aug 2021 · Full Time',
+    company: 'Gorilla Technology',
+    role: 'IT Technician & Audiovisual Engineer',
+    achievements: [
+      'Provided L1/L2/L3 IT support for clients including the Cancer Society NZ (500+ users)',
+      <>
+        Managed and maintained{' '}
+        <a
+          className="work-link"
+          href="https://gorillatechnology.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WorldIcon /> Gorilla Technology
+        </a>{' '}
+        and{' '}
+        <a
+          className="work-link"
+          href="https://worldpodcasts.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WorldIcon /> World Podcasts
+        </a>
+      </>,
+      'Recorded and edited audio and video content for the NZ Tech Podcast',
+    ],
+  },
+  {
+    logo: '/jnj.png',
+    alt: 'National Holdings',
+    period: 'Sep 2018 – June 2019 · Full Time',
+    company: 'National Holdings / JNJ Management',
+    role: 'IT Admin',
+    achievements: [
+      'Sole IT administrator responsible for all infrastructure and assets within the Sky World building',
+      <>
+        Managed multiple websites including{' '}
+        <a
+          className="work-link"
+          href="https://www.skyworld.co.nz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WorldIcon /> Sky World
+        </a>{' '}
+        and{' '}
+        <a
+          className="work-link"
+          href="https://www.metrolanes.co.nz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WorldIcon /> Metrolanes
+        </a>
+      </>,
+    ],
+  },
+];
+
 export default function OtherWorkExperience() {
-   return (
-      <div className="w-full border border-white pb-4">
-         <h4 className="pl-4 pt-4 text-2xl sm:text-2xl md:text-2xl font-bold">
-            Other Experience
-         </h4>
-         <div className="flex pt-8 pl-8 sm:text-left gap-4">
+  return (
+    <div>
+      <p className="section-label">Earlier Career</p>
+      <div className="career-section">
+        {entries.map((entry, i) => (
+          <div className="career-item" key={i}>
             <Image
-               src="/briskicon_new.png"
-               alt="Brisk Cloudware"
-               width={80}
-               height={80}
-               className="w-20 h-20"
+              src={entry.logo}
+              alt={entry.alt}
+              width={44}
+              height={44}
+              className="career-logo"
             />
-            <div>
-               <div>June 2024 - June 2025 (12 month Contract) </div>
-               <div className="text-xl sm:text-xl md:text-xl font-bold flex flex-row">
-                  Brisk Cloudware (NCH Software)
-               </div>
-               Front End Developer <br/>
-               <br />
-               <b>Key Achievements: </b>
-               <ul className="list-disc ml-5 mt-2">
-                  <li>
-                     Worked on the front end of the Brisk Cloudware booking software:
-                     <ul className="list-disc ml-5">
-                        <li>
-                           <a
-                           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                           href="https://appointment.briskcloudware.com/index.html"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           >
-                           <WorldIcon />
-                           Brisk Appointment
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li> Modernised the UI of the landing page using vanilla JavaScript, HTML, CSS  </li>
-                  <li> Worked closely with Product Manager and other developers to deliver new features and investigate/resolve any reported bugs</li>
-                  <li> Improved first-time user retention by designing and deploying targeted feature flags </li>
-                  <li> Enhanced overall user experience through introcuding features like: </li>
-                   <ul className="list-disc ml-5">
-                     <li> <b>Combobox</b> - Enabled users to freely search and enter records such as client names</li>
-                     <li> <b>Out of hour bookings</b> - Allowed appointments to be booked outside the standard times for special occasions </li>
-                     <li> <b>Context menu</b> -  Streamlined common actions (e.g., booking appointments, blocking time slots) directly from the appointment grid </li>
-                  </ul>
-               </ul>
+            <div className="career-content">
+              <p className="career-meta">{entry.period}</p>
+              <p className="career-company">{entry.company}</p>
+              <p className="career-role">{entry.role}</p>
+              <ul className="career-list">
+                {entry.achievements.map((item, j) => (
+                  <li key={j}>{item}</li>
+                ))}
+              </ul>
             </div>
-         </div>
-         <div className="flex pt-12 pl-8 sm:text-left gap-4">
-            <Image
-               src="/ezyvet.png"
-               alt="ezyVet"
-               width={80}
-               height={80}
-               className="w-20 h-20"
-            />
-            <div>
-               Aug 2021 - Feb 2024 (Full time)<br />
-               <div className="text-xl sm:text-xl md:text-xl font-bold">
-                  ezyVet
-               </div>
-               Intermediate Software Solutions Advisor <br/>
-               <br />
-               <b>Key Achievements: </b>
-               <ul className="list-disc ml-5 mt-2">
-                  <li>Delivered software training, technical support, and documentation for stakeholders. </li>
-                  <li>Supported a global user base, contributed to revenue retention, and led cross-functional initiatives across customer support, and the QA team.</li>
-                  <li>Performed testing on reported bugs and identifeid core workflows which were logged in the Jira and reviewed with QA and devs</li>
-                  <li>Utilised PHP to generate custom TWIG templates to generate additional revenue </li>
-                   <li>Implement an effective training program for onboarding new team members for more technical aspects of the software; such as: </li>
-                   <ul className="list-disc ml-5">
-                     <li>Hardware troubleshooting steps</li>
-                     <li>Configuration of IP and other windows settings for optimal efficiency</li>
-                     <li>Break down of TWIG (PHP) coding to produce simple document templates</li>
-                  </ul>
-                  <li>Created universal resources for stakeholders to easily navigate core functions of ezyVet</li>
-                  <ul className="list-disc ml-5">
-                     <li>
-                        <a
-                        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                        href="https://www.ezyvet.com/webinar/ezyprint"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                           <WorldIcon />
-                           Webinar
-                        </a>
-                     </li>
-                  </ul>
-               </ul>
-            </div>
-         </div>
-         <div className="flex pt-12 pl-8 sm:text-left gap-4">
-            <Image
-               src="/gorillatechlogo.jpeg"
-               alt="Gorilla Technology"
-               width={80}
-               height={80}
-               className="w-20 h-20"
-            />
-            <div>
-               Aug 2019 - Aug 2021 (Full time)<br />
-               <div className="text-xl sm:text-xl md:text-xl font-bold">
-                  Gorilla Technology
-               </div>
-               IT Technician & Audiovisual Engineer <br/>
-               <br />
-               <b>Key Achievements: </b><br />
-               <ul className="list-disc ml-5 mt-2">
-                  <li> Provided IT support (L1/L2/L3) for customers including large organisations such as the Cancer Society NZ with over 500 users </li>
-                  <li>Managed core sites for Gorilla Technology and World Podcasts</li>
-                     <ul className="list-disc ml-5">
-                        <li>
-                           <a
-                           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                           href="https://gorillatechnology.com/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           >
-                              <WorldIcon />
-                              Gorilla Technology
-                           </a>
-                        </li>
-                     </ul>
-                  <li>Recorded and edited audio and video for NZ Tech Podcast</li>
-                     <ul className="list-disc ml-5">
-                        <li>
-                           <a
-                           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                           href="https://worldpodcasts.com/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           >
-                              <WorldIcon />
-                              World Podcast
-                           </a>
-                        </li>
-                     </ul>
-               </ul>
-            </div>
-         </div>
-         <div className="flex pt-12 pl-8 sm:text-left gap-4">
-            <Image
-               src="/jnj.png"
-               alt="National Holdings"
-               width={80}
-               height={80}
-               className="w-20 h-20"
-            />
-            <div>
-            Sep 2018 - June 2019 (Full time) <br />
-            <div className="text-xl sm:text-xl md:text-xl font-bold">
-               National Holdings / JNJ Management
-            </div>
-            IT Admin <br/>
-            <br/>
-            <b>Key Achievements: </b><br />
-            <ul className="list-disc ml-5 mt-2">
-               <li> Managed all IT infrastructure and assets in the Sky World building </li>
-               <li> Including all related websites: </li>
-               <ul className="list-disc ml-5">
-                  <li>
-                     <a
-                     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                     href="https://www.skyworld.co.nz/"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     >
-                        <WorldIcon />
-                        Sky World
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                     href="https://www.metrolanes.co.nz/"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     >
-                        <WorldIcon />
-                        Metrolanes
-                     </a>
-                  </li>
-                  <li>WWW.PASTAMAGO.CO.NZ (Discontinued)</li>
-                  <li>WWW.CHICKENCLUB.CO.NZ (Discontinued)</li>
-               </ul>
-            </ul>
-            </div>
-         </div>
+          </div>
+        ))}
       </div>
-   );
+    </div>
+  );
 }

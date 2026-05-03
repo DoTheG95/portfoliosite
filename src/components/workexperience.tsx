@@ -1,101 +1,52 @@
 'use client'
-
 import Image from "next/image";
 import WorldIcon from "./worldicon";
 
 export default function WorkExperience() {
   return (
     <div className="work-section">
-      <h4 className="work-title">Work Experience</h4>
 
-
-      {/* ===== The Capsulelab ===== */}
+      {/* ── The Capsulelab ── */}
       <div className="work-item">
         <Image
           src="/the_capsule.png"
           alt="The Capsulelab"
-          width={48}
-          height={48}
+          width={44}
+          height={44}
           className="work-logo"
         />
-
         <div className="work-content">
-          <div className="work-meta">
-            June 2025 - Current (Contract)
-          </div>
-
-          <div className="work-company">
-            The Capsulelab
-          </div>
-
-          <div>Full Stack Developer</div>
-
-          <b>Key Achievements:</b>
-
+          <p className="work-meta">June 2025 – Current · Contract</p>
+          <p className="work-company">The Capsulelab</p>
+          <p className="work-role">Full Stack Developer</p>
           <ul className="work-list">
-            <li>
-              Create a web application for a startup company with the goal of providing a platform for users to store their digital assets in the IPFS:
-              {/* <ul className="work-sublist">
-                <li>
-                  <a
-                    className="work-link"
-                    href="https://www.thecapsulelab.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <WorldIcon />
-                    The Capsule Lab 
-                  </a>
-                </li>
-              </ul> */}
-            </li>
-            <li>
-              Create iOS and VisionOS apps using Flutter and Dart. With responsive UIs utilising benefits of each OS such as spatial computing on the VisonOS.
-            </li>
-            <li>
-              Built a community post page for sharing articles and images. Allowing commenting and threaded comments
-            </li>
-            <li>
-              Built an admin dashboard with key features such as customising email templates and sending emails.
-            </li>
-            <li>
-              RESTFul API such as email js
-            </li>
-            <li>
-              Created documentation and aligned technical decisions within the team            
-            </li>
-            <li>
-              Implemented BIP‑39 mnemonic generation for passphrases to facilliate support secure user account recovery.           
-            </li>
+            <li>Built a web platform for a startup enabling users to store digital assets on the IPFS</li>
+            <li>Developed iOS and VisionOS apps in Flutter and Dart, including spatial computing UI for VisionOS</li>
+            <li>Shipped a community post page with article sharing, image uploads, and threaded comments</li>
+            <li>Built an admin dashboard with email template customisation and bulk send capabilities</li>
+            <li>Integrated RESTful APIs including EmailJS for transactional messaging</li>
+            <li>Implemented BIP-39 mnemonic generation to support secure account recovery flows</li>
+            <li>Authored technical documentation and aligned architecture decisions across the team</li>
           </ul>
         </div>
       </div>
-      {/* ===== Brisk Cloudware ===== */}
+
+      {/* ── Brisk Cloudware ── */}
       <div className="work-item">
         <Image
           src="/briskicon_new.png"
           alt="Brisk Cloudware"
-          width={48}
-          height={48}
+          width={44}
+          height={44}
           className="work-logo"
         />
-
         <div className="work-content">
-          <div className="work-meta">
-            June 2024 - June 2025 (12 month Contract)
-          </div>
-
-          <div className="work-company">
-            Brisk Cloudware
-          </div>
-
-          <div>Front End Developer</div>
-
-          <b>Key Achievements:</b>
-
+          <p className="work-meta">June 2024 – June 2025 · 12-month Contract</p>
+          <p className="work-company">Brisk Cloudware</p>
+          <p className="work-role">Front End Developer</p>
           <ul className="work-list">
             <li>
-              Worked on the front end of the Brisk Cloudware booking software:
+              Delivered front-end work on the live booking platform:
               <ul className="work-sublist">
                 <li>
                   <a
@@ -104,114 +55,77 @@ export default function WorkExperience() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <WorldIcon />
-                    Brisk Appointment
+                    <WorldIcon /> Brisk Appointment
                   </a>
                 </li>
               </ul>
             </li>
-
+            <li>Modernised the landing page UI using vanilla JavaScript, HTML and CSS</li>
+            <li>Worked closely with the Product Manager and engineering team to ship features and resolve bugs</li>
+            <li>Improved first-time user retention through targeted feature flags</li>
             <li>
-              Modernised the UI of the landing page using vanilla JavaScript,
-              HTML, CSS
+              Introduced UX improvements including:
+              <ul className="work-sublist">
+                <li><strong style={{ color: 'var(--text-primary)' }}>Combobox</strong> — free-text search and record entry for clients</li>
+                <li><strong style={{ color: 'var(--text-primary)' }}>Out-of-hours bookings</strong> — flexible scheduling beyond standard times</li>
+                <li><strong style={{ color: 'var(--text-primary)' }}>Context menu</strong> — rapid access to common actions from the appointment grid</li>
+              </ul>
             </li>
-
-            <li>
-              Worked closely with Product Manager and other developers to deliver
-              new features and resolve bugs
-            </li>
-
-            <li>
-              Improved first-time user retention through targeted feature flags
-            </li>
-
-            <li>Enhanced UX by introducing features such as:</li>
-
-            <ul className="work-sublist">
-              <li>
-                <b>Combobox</b> – Enabled users to search and enter records
-              </li>
-              <li>
-                <b>Out of hour bookings</b> – Allowed flexible scheduling
-              </li>
-              <li>
-                <b>Context menu</b> – Streamlined actions from the grid
-              </li>
-            </ul>
           </ul>
         </div>
       </div>
 
-      {/* ===== Juggle Rewards ===== */}
+      {/* ── Juggle Rewards ── */}
       <div className="work-item">
         <Image
           src="/jugglerewards.svg"
           alt="Juggle Rewards"
-          width={48}
-          height={48}
+          width={44}
+          height={44}
           className="work-logo"
         />
-
         <div className="work-content">
-          <div className="work-meta">
-            June 2023 - Feb 2024 (Contract)
-          </div>
-
-          <div className="work-company">
-            Juggle Rewards
-          </div>
-
-          <div>Lead App Developer</div>
-
-          <b>Key Responsibilities & Achievements:</b>
-
+          <p className="work-meta">June 2023 – Feb 2024 · Contract</p>
+          <p className="work-company">Juggle Rewards</p>
+          <p className="work-role">Lead App Developer</p>
           <ul className="work-list">
             <li>
-                Created the MVP of Juggle Rewards App, a rewards program for users to redeem points and earn while spending at selected businesses in New Zealand. 
-            </li>
-            <ul>
+              Led development of the MVP for a NZ-based rewards platform where users earn and redeem points at partner businesses:
+              <ul className="work-sublist">
                 <li>
-                    <a
-                        className="work-link"
-                        href="https://play.google.com/store/apps/details?id=com.juggle.jugglerewards"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                        src="/apple_logo.svg"
-                        alt="Store icon"
-                        width={16}
-                        height={16}
-                        />
-                        Juggle Rewards App (React Native)
-                    </a>
+                  <a
+                    className="work-link"
+                    href="https://play.google.com/store/apps/details?id=com.juggle.jugglerewards"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image src="/apple_logo.svg" alt="Store" width={14} height={14} />
+                    Juggle Rewards App (React Native)
+                  </a>
                 </li>
-            </ul>
-            <li>
-                Replicated Figma wireframes though typescript to create functional user interfaces with the user`s experience in mind.
+              </ul>
             </li>
+            <li>Translated Figma wireframes into production-ready TypeScript components with a strong focus on UX</li>
+            <li>Set up user authentication including OTP and email verification flows</li>
             <li>
-                Set up user authentication such as one time password (OTP) verification and email verifications.
-            </li>
-            <li>
-                Created landing page for the business with key infomation about the business and how it will impact different stakeholders.
-            </li>
-            <ul>
+              Built the marketing landing page:
+              <ul className="work-sublist">
                 <li>
-                    <a
-                        className="work-link"
-                        href="https://jugglerewards.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <WorldIcon />
-                        Juggle Rewards Home Page (React)
-                    </a>
+                  <a
+                    className="work-link"
+                    href="https://jugglerewards.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <WorldIcon /> Juggle Rewards (React)
+                  </a>
                 </li>
-            </ul>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
+
     </div>
   );
 }

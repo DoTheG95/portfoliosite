@@ -1,109 +1,90 @@
 'use client';
+import { useState } from 'react';
 import WorldIcon from "./worldicon";
 import Link from 'next/link';
 
-const showElementById = (id: string) => {
-   const el = document.getElementById(id);
-   if (!el) return;
-   el.hidden = false;
+interface Project {
+  title: string;
+  url: string;
+  description: string;
+  techStack: string;
+  links: { label: string; href: string; icon?: React.ReactNode }[];
+}
+
+const projects: Project[] = [
+  {
+    title: 'Fearless Nuzlocke Tracker',
+    url: 'http://fearlesslocke.xyz/',
+    description:
+      'A web app for Pokémon fans to track their Nuzlocke runs, including a custom ruleset I designed called the Fearlesslocke. Features include Pokédex selection, type-based search and filtering, and a full playthrough log tracking catches, evolutions and losses.',
+    techStack: 'React · Firebase (Auth + Storage) · PokéAPI · Vercel',
+    links: [
+      { label: 'Live site', href: 'https://www.fearlesslocke.xyz/', icon: <WorldIcon /> },
+      { label: 'GitHub', href: 'https://github.com/DoTheG95/fearlesslocke' },
+    ],
+  },
+  {
+    title: 'Cardboard Addiction',
+    url: 'https://www.cardboardaddiction.com/',
+    description:
+      'A community-driven marketplace for TCG collectors. Users can create card listings, build community groups and share market posts — all in one place.',
+    techStack: 'React · Firebase · Vercel',
+    links: [
+      { label: 'Live site', href: 'https://www.cardboardaddiction.com/', icon: <WorldIcon /> },
+      { label: 'GitHub', href: 'https://github.com/DoTheG95/bristbanetradesystem' },
+    ],
+  },
+];
+
+function ProjectCard({ project }: { project: Project }) {
+  const [techVisible, setTechVisible] = useState(false);
+
+  return (
+    <div className="project-card">
+      <p className="project-title">
+        <a href={project.url} target="_blank" rel="noopener noreferrer">
+          {project.title}
+        </a>
+        <WorldIcon />
+      </p>
+
+      <p className="project-description">{project.description}</p>
+
+      {techVisible ? (
+        <div className="project-tech-reveal">{project.techStack}</div>
+      ) : (
+        <button
+          className="project-tech-toggle"
+          onClick={() => setTechVisible(true)}
+        >
+          View tech stack →
+        </button>
+      )}
+
+      <div className="project-links">
+        {project.links.map((link, i) => (
+          <Link
+            key={i}
+            href={link.href}
+            className="project-link-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.icon && link.icon}
+            {link.label}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default function Projects() {
-   return (
-      <div className="w-full max-w-screen-xl mx-auto">
-         <div className="pl-4 pr-4 pt-4 border border-white">
-            <div className="text-xl sm:text-xl md:text-xl font-bold flex flex-row">
-               <a
-                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                  href="http://fearlesslocke.xyz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  Fearless Nuzlocke tracker
-                  <WorldIcon />
-               </a>
-            </div>
-            <a 
-               className="text-[rgb(0_199_255)]"
-               onClick={e => {
-                  e.preventDefault();
-                  showElementById('fearless_techstack');
-                  (e.currentTarget as HTMLAnchorElement).hidden = true;
-               }}>
-                  Click here to see Tech stacks used 
-               </a>
-               <div id="fearless_techstack" hidden>
-                  This web application is built with React <br/>
-                  Deployed with Vercel <br/>
-                  Pokemon RESTful API: Pokeapi <br/>
-                  Login Authentication and Cloud Storage through: Firebase<br/>
-               </div>
-            <br />
-            If you are fan of the popular franchise [Pokemon] - this is a web app where you can keep track of your Nuzlocke Experience<br/>
-            It is also designed to work with a Unique new rule I devised called the [fearlesslocke] <br/>
-            Some key features are: search feature / filter by type / log [Pokemon] used through out your playthrough <br/>
-            <br/>
-            Currently this app loads Pokemon entries based on the Pokedex selected 
-            <br />
-            You can also search and filter for Pokemon based on their types as well
-            <br />
-            The main feature is being able to track all Pokemon caught and used as well as any evolutions of the Pokemon as well. 
-           <br />
-           <br/>
-            <Link href="https://www.fearlesslocke.xyz/" className="text-[rgb(0_199_255)]">
-               Click here to try it out!
-            </Link>
-            <br />
-            <br/>
-            <Link href="https://github.com/DoTheG95/fearlesslocke" className="text-[rgb(0_199_255)]">
-               Project Github
-            </Link>
-         </div>
-         <div className="pl-4 pr-4 pt-4 border border-white">
-            <div className="text-xl sm:text-xl md:text-xl font-bold flex flex-row">
-               <a
-                  className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                  href="https://www.cardboardaddiction.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  Cardboard Addiction
-                  <WorldIcon />
-               </a>
-            </div>
-            
-            <div className="pl-4 pr-4 pt-4 pb-4 border border-white">
-               Tech stack:
-               
-            </div>
-            <a 
-               className="text-[rgb(0_199_255)]"
-               onClick={e => {
-                  e.preventDefault();
-                  showElementById('cardboard_addiction_techstack');
-                  (e.currentTarget as HTMLAnchorElement).hidden = true;
-               }}>
-                  Click here to see Tech stacks used 
-               </a>
-               <div id="cardboard_addiction_techstack" hidden>
-                  This web application is built with React <br/>
-                  Deployed with Vercel <br/>
-                  Pokemon RESTful API: Pokeapi <br/>
-                  Login Authentication and Cloud Storage through: Firebase<br/>
-               </div>
-            <br />
-            A community driven marketplace for lovers of TCG. <br/>
-            Users can create listings, communities and market posts for their TCG cards. <br/>
-           <br/>
-            <Link href="https://www.fearlesslocke.xyz/" className="text-[rgb(0_199_255)]">
-               Click here to try it out!
-            </Link>
-            <br />
-            <br/>
-            <Link href="https://github.com/DoTheG95/bristbanetradesystem" className="text-[rgb(0_199_255)]">
-               Project Github
-            </Link>
-         </div>
-      </div>
-   );
+  return (
+    <div className="projects-grid">
+      {projects.map((p, i) => (
+        <ProjectCard key={i} project={p} />
+      ))}
+    </div>
+  );
 }
