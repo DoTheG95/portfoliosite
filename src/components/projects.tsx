@@ -1,16 +1,11 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import WorldIcon from "./worldicon";
 import Link from 'next/link';
-import Image from 'next/image';
 
 /* ─────────────────────────────────────────────
    Types
 ───────────────────────────────────────────── */
-interface ProjectImage {
-  src: string;
-  alt: string;
-}
 
 interface Project {
   title: string;
