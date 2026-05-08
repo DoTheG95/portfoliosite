@@ -15,22 +15,20 @@ interface Project {
   overview: string;
   problem?: string;
   features?: string[];
-  challenges?: string;
-  outcome?: string;
+  challenges?: string[];
+  outcome?: string[];
   techStack: string;
   links: { label: string; href: string; external?: boolean }[];
   featured?: boolean;
 }
 
-/* ─────────────────────────────────────────────
-   Project data
-───────────────────────────────────────────── */
 const projects: Project[] = [
+  //Cardboard Addiction
   {
     title: 'Cardboard Addiction',
-    subtitle: 'Digimon TCG Trade & Wishlist Platform',
+    subtitle: 'Digimon TCG Maketplace Web Application',
     url: 'https://www.cardboardaddiction.com/',
-    role: 'Solo Full Stack — product, architecture, frontend, deployment',
+    role: 'Full Stack — UI/UX Design, Product Design, Database Schema, RESTAPI',
     overview:
       'A full-stack web application that gives Digimon TCG collectors a centralised place to manage and trade their cards. Built for the Australian community that existing platforms like TCGPlayer largely ignore, where most trading still happens across Facebook groups and spreadsheets.',
     problem:
@@ -44,10 +42,20 @@ const projects: Project[] = [
       'Quantity tracking per card entry across both list types',
       'Invite-code gating for closed beta — currently live with active users',
     ],
-    challenges:
-      'Migrated away from a custom Facebook OAuth and JWT system mid-project after identifying it would be difficult to fully implement. The original architecture had Next.js API routes acting as middleware — receiving Facebook codes, exchanging them for tokens, and minting custom JWTs. Replaced entirely with Supabase Auth, which required rebuilding session handling, repointing all foreign keys to auth.users, and resolving a redirect loop caused by TOKEN_REFRESHED events firing on the main page.',
-    outcome:
-      'Live and in closed beta. Currently supports wishlist and inventory management, user matching based on lists, and direct offers between users. Upcoming: a public browse page, email notifications for offers, calendar-based meetup scheduling, and a trusted friends list.',
+    challenges:[
+      'The challenge:',
+      'Designing a detection for an existing duplicated trade.', 
+      'A user should not be able to send a trade request for the same item to the same seller, while the trade request is still pending.',
+      'My Solution:',
+      'In my first iteration I tried to check ',
+    ]
+      ,outcome:[
+      'Live and in closed beta.',
+      'Currently supports wishlist and inventory management, user matching based on lists, and direct offers between users.', 
+      'Upcoming: a public browse page, email notifications for offers, calendar-based meetup scheduling, and a trusted friends list',
+      '',
+      'If you would like to test this out feel free to create an account using Code: [DigiBrisbane2026]',
+      ],
     techStack: 'Next.js 14 · Supabase · PostgreSQL · Vercel',
     links: [
       { label: 'Live site', href: 'https://www.cardboardaddiction.com/', external: true },
@@ -55,6 +63,8 @@ const projects: Project[] = [
     ],
     featured: true,
   },
+
+  //Fearlesslocke
   {
     title: 'Fearless Nuzlocke Tracker',
     subtitle: 'Pokémon Run Manager with Fearlesslocke Ruleset',
@@ -73,10 +83,12 @@ const projects: Project[] = [
       'Firebase authentication for persistent, account-tied run data across sessions',
       'Cloud storage via Firebase so run history is never lost between devices',
     ],
-    challenges:
+    challenges:[
       'The main design challenge was modelling run state in a way that felt intuitive to update mid-playthrough but was also queryable enough to power the ban list across multiple runs. The solution was structuring each run as a document with a typed encounter log, so the ban list can be derived at read time by collapsing used species across all completed runs — no separate sync required.',
-    outcome:
+    ],
+    outcome:[
       'Publicly live. Current focus is on hardening the Fearlesslocke mode and improving the team builder UX. Planned next: shareable run links so players can post their runs to the community, and a leaderboard for completed Fearlesslocke challenges.',
+    ],
     techStack: 'React · Firebase (Auth + Firestore) · PokéAPI · Vercel',
     links: [
       { label: 'Live site', href: 'https://www.fearlesslocke.xyz/', external: true },
@@ -162,7 +174,9 @@ function FeaturedProjectCard({ project }: { project: Project }) {
             {challengesOpen ? '▾' : '▸'} Challenges & Solutions
           </button>
           {challengesOpen && (
-            <p className="project-tech-reveal">{project.challenges}</p>
+            <div className="project-tech-reveal">
+              {project.challenges.map((f, i) => <p key={i}>{f}</p>)}
+            </div>
           )}
         </div>
       )}
@@ -173,7 +187,9 @@ function FeaturedProjectCard({ project }: { project: Project }) {
           <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '6px' }}>
             Status & Roadmap
           </p>
-          <p className="project-tech-reveal">{project.outcome}</p>
+          <div className="project-tech-reveal">
+            {project.outcome.map((f, i) => <p key={i}>{f}</p>)}
+          </div>
         </div>
       )}
 
