@@ -17,15 +17,17 @@ const stack = [
 
 export default function TechStack() {
   return (
-    <div className="tech-section">
+    <div>
       <p className="section-label">Tech Stack</p>
-      <div className="tech-grid">
-        {stack.map((name) => (
-          <div className="tech-item" key={name}>
-            <TechStackIcon stackname={name} />
-            <span className="tech-item-label">{name}</span>
-          </div>
-        ))}
+      <div className="tech-section">
+        <div className="tech-grid">
+          {stack.map((name) => (
+            <div className="tech-item" key={name}>
+              <TechStackIcon stackname={name} />
+              <span className="tech-item-label">{name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

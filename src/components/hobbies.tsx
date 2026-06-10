@@ -39,25 +39,27 @@ const cards = [
 
 export default function Hobbies() {
   return (
-    <div className="hobbies-section">
+    <div>
       <p className="section-label">Outside of work</p>
-      <div className="hobbies-grid">
-        {cards.map((c, i) => (
-          <div key={i} className="w-full max-w-xs mx-auto">
-            <FlipCard
-              front={<TCGCardFront {...c.frontProps} />}
-              back={
-                <Image
-                  src={c.backSrc}
-                  alt="Card Back"
-                  className="w-full h-full object-cover rounded-lg"
-                  width={200}
-                  height={300}
-                />
-              }
-            />
-          </div>
-        ))}
+      <div className="hobbies-section">
+        <div className="hobbies-grid">
+          {cards.map((c, i) => (
+            <div key={i} className="w-full max-w-xs mx-auto">
+              <FlipCard
+                front={<TCGCardFront {...c.frontProps} />}
+                back={
+                  <Image
+                    src={c.backSrc}
+                    alt="Card Back"
+                    className="w-full h-full object-cover rounded-lg"
+                    width={200}
+                    height={300}
+                  />
+                }
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

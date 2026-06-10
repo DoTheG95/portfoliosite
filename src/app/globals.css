@@ -225,16 +225,6 @@ body > * {
    WORK EXPERIENCE
    ============================================= */
 
-.work-section {
-  background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  transition: border-color var(--transition-base), background var(--transition-base);
-}
-
 .work-title {
   font-size: 20px;
   font-weight: 700;
@@ -1004,4 +994,263 @@ body > * {
   letter-spacing: 0.06em;
   padding: 6px 0 8px;
   text-transform: uppercase;
+}
+
+/* =============================================
+   WORK EXPERIENCE — TURNTABLE CAROUSEL
+   ============================================= */
+
+.turntable-outer {
+  display: flex;
+  justify-content: center;
+}
+
+.turntable-left {
+  width: 100%;
+  max-width: 960px;
+}
+
+.turntable-stage {
+  position: relative;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1600px;
+  margin-bottom: 32px;
+}
+
+.turntable-layout {
+  position: absolute;
+  width: 100%;
+  max-width: 820px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.6s ease;
+}
+
+.turntable-card {
+  display: grid;
+  gap: 32px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s ease;
+}
+
+.turntable-card:not(.is-center) {
+  padding: 24px;
+  opacity: 0.45;
+  filter: blur(1px);
+  transform: scale(0.85);
+  pointer-events: none;
+}
+
+.turntable-card.is-center {
+  box-shadow: 0 25px 50px -12px rgba(0, 199, 255, 0.18);
+  border-color: rgba(0, 199, 255, 0.25);
+}
+
+/* Left Content */
+.turntable-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.turntable-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.turntable-card-logo {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  border-radius: 14px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.turntable-card-logo .logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(1.08);
+}
+
+/* Make sure SVGs scale nicely */
+.turntable-card-logo img[src$=".svg"] {
+  width: 100%;
+  height: 100%;
+}
+
+.turntable-card-company {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.turntable-card-meta {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.turntable-card-role {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.turntable-card-bullets {
+  margin: 0;
+  padding-left: 1.4rem;
+  flex: 1;
+}
+
+.turntable-card-bullets li {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 9px;
+}
+
+/* Right Side - Recommendation Image */
+.turntable-card-recommendation {
+  align-self: start;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  padding: 8px;
+}
+
+.turntable-card-recommendation img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Navigation */
+.work-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-nav-btn {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 9px 22px;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.work-nav-btn:hover:not(:disabled) {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.work-dots {
+  display: flex;
+  gap: 9px;
+}
+
+.work-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  cursor: pointer;
+}
+
+.work-dot.active {
+  background: var(--accent);
+  transform: scale(1.35);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .turntable-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .turntable-card-recommendation {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
+.turntable-card-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 30;
+}
+
+.turntable-card-icon svg {
+  width: 56px;
+  height: 56px;
+  color: white;           /* or var(--text-primary) */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+
+
+.turntable-card-icon .tooltip {
+  position: absolute;
+  bottom: 100%;           /* Pushes it above the icon */
+  right: 50%;
+  transform: translateX(50%); 
+  margin-bottom: 12px;
+  background: var(--glass-bg-strong);
+  color: var(--text-primary);
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  z-index: 40;
+}
+
+.turntable-card-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(50%) translateY(-8px);
+}
+
+/* Small arrow pointing down (towards the icon) */
+.turntable-card-icon .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--glass-bg-strong);
 }

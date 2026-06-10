@@ -111,26 +111,14 @@ export default function Home() {
 
         {/* ── WORK / PROJECTS TABS ── */}
         <Section>
-          <div className="tab-container">
-            <button
-              role="tab"
-              onClick={() => setActiveTab('work')}
-              className={activeTab === 'work' ? 'active-button' : 'inactive-button'}
-              aria-selected={activeTab === 'work'}
-            >
-              Work Experience
-            </button>
-            <button
-              role="tab"
-              onClick={() => setActiveTab('projects')}
-              className={activeTab === 'projects' ? 'active-button' : 'inactive-button'}
-              aria-selected={activeTab === 'projects'}
-            >
-              Projects
-            </button>
-          </div>
-          {activeTab === 'work' && <WorkExperience />}
-          {activeTab === 'projects' && <Projects />}
+            <p className="section-label"> Work Experience</p>
+            <div/>
+            <WorkExperience />
+        </Section>
+
+        <Section>
+          <p className="section-label"> Projects</p>
+          <Projects />
         </Section>
 
         {/* ── TECH STACK ── */}
