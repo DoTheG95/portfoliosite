@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Socials from "../../components/socials";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import { useState } from 'react';
 import WorkExperience from "../../components/workexperience";
 import TechStack from "../../components/techstack";
 import Hobbies from "../../components/hobbies";
@@ -40,7 +39,6 @@ function SectionLabel({ text }: { text: string }) {
 }
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'work' | 'projects'>('work')
 
   return (
     <div className="w-full" style={{ position: 'relative', zIndex: 1 }}>
