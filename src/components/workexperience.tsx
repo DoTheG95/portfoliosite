@@ -72,18 +72,16 @@ function getOffset(i: number, current: number, total: number) {
 
 export default function WorkExperience() {
   const [current, setCurrent] = useState(0);
-  const [spinning, setSpinning] = useState(false);
   const [showRecommendation, setShowRecommendation] = useState(false);
   const spinRef = useRef(false);
 
-  const navigate = useCallback((dir: 1 | -1) => {
+const navigate = useCallback((dir: 1 | -1) => {
     if (spinRef.current) return;
     spinRef.current = true;
-    setSpinning(true);
     setCurrent(prev => ((prev + dir) % workItems.length + workItems.length) % workItems.length);
+    // Reset after animation
     setTimeout(() => {
       spinRef.current = false;
-      setSpinning(false);
     }, 500);
   }, []);
 
@@ -91,7 +89,6 @@ export default function WorkExperience() {
 
   const handleIconClick = () => {
     if (item.recommendation) {
-      console.log('test')
       setShowRecommendation(true);
     }
   };
@@ -222,7 +219,7 @@ export default function WorkExperience() {
               ×
             </button>
             
-            <img 
+            <img
               src={item.recommendation} 
               alt={`Recommendation from ${item.company}`} 
               className="rounded-xl shadow-2xl max-h-[85vh] w-auto mx-auto"
