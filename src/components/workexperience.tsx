@@ -219,9 +219,11 @@ const navigate = useCallback((dir: 1 | -1) => {
               ×
             </button>
             
-            <img
+            <Image
               src={item.recommendation} 
               alt={`Recommendation from ${item.company}`} 
+              width={85}
+              height={50}
               className="rounded-xl shadow-2xl max-h-[85vh] w-auto mx-auto"
             />
             
